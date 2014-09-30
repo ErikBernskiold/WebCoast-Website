@@ -25,7 +25,7 @@
 		<header class="site-header">
 			<div class="row">
 				<div class="logo large-12 medium-12 small-24 columns">
-					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/webcoast-logo.png" width="375" height="115" alt="<?php _e( 'WebCoast', 'webcoast' ); ?>"></a>
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/webcoast-logo.png" width="375" height="115" alt="<?php _e( 'WebCoast', 'webcoast' ); ?>"></a>
 				</div>
 
 				<div class="search-box large-5 medium-8 small-24 columns">

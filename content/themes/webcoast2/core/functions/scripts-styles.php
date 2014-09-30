@@ -22,7 +22,7 @@ function webcoast_enqueue_styles() {
 
 	// Register
 	// wp_register_style( $handle, $src, $deps, $ver, $media );
-	wp_register_style( 'base', THEME_CSS . '/layout.css', array( 'webfont-open-sans' ), THEME_VERSION, 'all' );
+	wp_register_style( 'base', THEME_CSS_URI . '/layout.css', array( 'webfont-open-sans' ), THEME_VERSION, 'all' );
 	wp_register_style( 'webfont-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700', false, false, 'all' );
 	wp_register_style( 'webfont-sintony', '//fonts.googleapis.com/css?family=Sintony:400,700', false, false, 'all' );
 
@@ -33,8 +33,8 @@ function webcoast_enqueue_styles() {
 
 	// If we have a custom.css stylesheet, include that too. This makes it easier for
 	// clients to modify the CSS quickly without having to know and use SASS.
-	if( file_exists( THEME_CSS . '/custom.css' ) ) {
-		wp_register_style( 'custom', THEME_CSS . '/custom.css', false, THEME_VERSION, 'all' );
+	if( file_exists( THEME_CSS_URI . '/custom.css' ) ) {
+		wp_register_style( 'custom', THEME_CSS_URI . '/custom.css', false, THEME_VERSION, 'all' );
 
 		wp_enqueue_style( 'custom' );
 	}
@@ -53,9 +53,9 @@ function webcoast_enqueue_scripts() {
 
 	// Register
 	// wp_register_script( $handle, $src, $deps, $ver, $in_footer );
-	wp_register_script( 'modernizr', THEME_JS . '/vendor/custom.modernizr.js', false, '2.6.2', false );
-	wp_register_script( 'scripts', THEME_JS . '/main.min.js', array( 'jquery', 'masonry' ), THEME_VERSION, false );
-	wp_register_script( 'masonry', THEME_JS . '/vendor/masonry.pkgd.min.js', array( 'jquery' ), '3.1.2', false );
+	wp_register_script( 'modernizr', THEME_JS_URI . '/vendor/custom.modernizr.js', false, '2.6.2', false );
+	wp_register_script( 'scripts', THEME_JS_URI . '/main.min.js', array( 'jquery', 'masonry' ), THEME_VERSION, false );
+	wp_register_script( 'masonry', THEME_JS_URI . '/vendor/masonry.pkgd.min.js', array( 'jquery' ), '3.1.2', false );
 
 
 	// Enqueue
@@ -88,7 +88,7 @@ add_action('wp_enqueue_scripts', 'webcoast_enqueue_scripts');
  **/
 function webcoast_favicon() {
 
-	echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . THEME_IMAGES . '/favicon.ico">';
+	echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . THEME_IMAGES_URI . '/favicon.ico">';
 
 }
 

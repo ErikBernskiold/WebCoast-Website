@@ -12,7 +12,7 @@
 	<div class="site-footer">
 		<div class="row">
 			<div class="small-24 medium-12 large-9 columns">
-				<p><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/webcoast-logo-white.png" width="300" height="115" alt="WebCoast"></a></p>
+				<p><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/webcoast-logo-white.png" width="300" height="115" alt="WebCoast"></a></p>
 				<p><?php printf( __( 'Copyright &copy; %s WebCoast', 'webcoast' ), date( 'Y' ) ); ?></p>
 			</div>
 			<div class="small-24 medium-12 large-5 columns">
