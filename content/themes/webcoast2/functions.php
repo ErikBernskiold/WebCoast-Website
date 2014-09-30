@@ -22,7 +22,7 @@ $webcoast = new WebCoast_Framework();
 $webcoast->init(array(
 	'theme_name' => 'WebCoast', // Change this to the name of the theme.
 	'theme_slug' => 'webcoast', // Create a custom slug for the theme.
-	'theme_version' => '1.2'
+	'theme_version' => '1.3'
 ));
 
 /**
