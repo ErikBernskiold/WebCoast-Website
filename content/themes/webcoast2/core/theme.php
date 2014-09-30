@@ -29,9 +29,6 @@ if ( ! class_exists( 'WebCoast_Framework' ) ) :
 			// Load functions
 			add_action( 'init', array( $this, 'functions' ) );
 
-			// Load custom dashboard widgets
-			add_action( 'admin_init', array( $this, 'dashboard_widgets' ) );
-
 			// Add custom image sizes
 			add_action( 'after_setup_theme', array( $this, 'custom_image_sizes' ) );
 
