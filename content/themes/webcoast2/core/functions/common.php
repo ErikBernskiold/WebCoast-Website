@@ -8,6 +8,6 @@ if ( ! function_exists( 'webcoast_clear_menu_transient' ) ) :
         delete_transient( 'webcoast_menu' );
     }
 
-    dd_action( 'wp_update_nav_menu', 'webcoast_clear_menu_transient' );
+    add_action( 'wp_update_nav_menu', 'webcoast_clear_menu_transient' );
 
 endif;
