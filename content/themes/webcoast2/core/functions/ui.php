@@ -148,13 +148,3 @@ function webcoast_get_nav_menu() {
 
 }
 endif;
-
-if ( ! function_exists( 'webcoast_clear_menu_transient' ) ) :
-add_action( 'wp_update_nav_menu', 'webcoast_clear_menu_transient' );
-/**
- * Clear the menu transient (above) when a menu is saved.
- */
-function webcoast_clear_menu_transient() {
-    delete_transient( 'webcoast_menu' );
-}
-endif;
