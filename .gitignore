@@ -31,7 +31,7 @@ content/plugins/webcoast/data/
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 content/themes/*
-!content/themes/webcoast/
+!content/themes/webcoast2/
 
 
 # Ignore SASS cache files
