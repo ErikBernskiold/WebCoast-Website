@@ -15,6 +15,13 @@
 //$current_year = get_field( 'program_display_year', 'option' );
 $current_year = 2014;
 
+if ( isset( $_GET['year'] ) ) {
+	$set_year = wp_strip_all_tags( $_GET['year'] );
+	$filter_year = $set_year;
+} else {
+	$filter_year = $current_year;
+}
+
 // Get the conference days and loop through them,
 // creating a query on the items that day.
 $days = webcoast_get_transient_terms( 'webcoast_days', 'webcoast_day', array(
@@ -42,7 +49,7 @@ foreach ( $days as $day ) :
 			array(
 				'taxonomy' => 'year',
 				'field'    => 'slug',
-				'terms'    => $current_year,
+				'terms'    => $filter_year,
 			),
 		),
 	);
@@ -60,6 +67,14 @@ foreach ( $days as $day ) :
 			$end_time = get_post_meta( $post->ID, 'program_endtime', true );
 			$video_thumbnail = get_post_meta( $post->ID, 'video_thumbnail', true );
 			$video_embed = get_post_meta( $post->ID, 'video_embed', true );
+
+			$program_date_object = new DateTime( $date );
+
+			$start_time_with_day = $date . ' ' . $start_time;
+			$start_time_object = new DateTime( $start_time_with_day );
+
+			$end_time_with_day = $date . ' ' . $end_time;
+			$end_time_object = new DateTime( $end_time_with_day );
 
 			$speakers_array = array();
 
@@ -160,10 +175,10 @@ foreach ( $days as $day ) :
 			// Add all the items to the array
 			$program_array[ $day->slug ][] = array(
 				'title' => get_the_title(),
-				'date' => $date,
+				'date' => $program_date_object->format( 'Y-m-d' ),
 				'summary' => $summary,
-				'start_time' => $start_time,
-				'end_time' => $end_time,
+				'start_time' => $start_time_object->format( 'Y-m-d H:i:s O' ),
+				'end_time' => $end_time_object->format( 'Y-m-d H:i:s O' ),
 				'video_embed' => $video_embed,
 				'video_thumbnail' => $video_thumbnail,
 				'content' => get_the_content(),
