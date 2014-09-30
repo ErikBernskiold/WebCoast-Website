@@ -15,6 +15,7 @@
 /*
 !.gitignore
 !content/
+!README.md
 
 # Ignore everything in the "content" directory, except the "plugins"
 # and "themes" directories.
