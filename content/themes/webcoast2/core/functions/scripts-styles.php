@@ -23,10 +23,12 @@ function webcoast_enqueue_styles() {
 	// Register
 	// wp_register_style( $handle, $src, $deps, $ver, $media );
 	wp_register_style( 'base', THEME_CSS . '/layout.css', array( 'webfont-open-sans' ), THEME_VERSION, 'all' );
-	wp_register_style( 'webfont-open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700', false, false, 'all' );
+	wp_register_style( 'webfont-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700', false, false, 'all' );
+	wp_register_style( 'webfont-sintony', '//fonts.googleapis.com/css?family=Sintony:400,700', false, false, 'all' );
 
 	// Enqueue
 	wp_enqueue_style( 'webfont-open-sans' );
+	wp_enqueue_style( 'webfont-sintony' );
 	wp_enqueue_style( 'base' );
 
 	// If we have a custom.css stylesheet, include that too. This makes it easier for
@@ -52,7 +54,7 @@ function webcoast_enqueue_scripts() {
 	// Register
 	// wp_register_script( $handle, $src, $deps, $ver, $in_footer );
 	wp_register_script( 'modernizr', THEME_JS . '/vendor/custom.modernizr.js', false, '2.6.2', false );
-	wp_register_script( 'scripts', THEME_JS . '/scripts.min.js', array( 'jquery', 'masonry' ), THEME_VERSION, false );
+	wp_register_script( 'scripts', THEME_JS . '/main.min.js', array( 'jquery', 'masonry' ), THEME_VERSION, false );
 	wp_register_script( 'masonry', THEME_JS . '/vendor/masonry.pkgd.min.js', array( 'jquery' ), '3.1.2', false );
 
 
