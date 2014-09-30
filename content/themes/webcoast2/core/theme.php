@@ -21,7 +21,7 @@ if ( ! class_exists( 'WebCoast_Framework' ) ) :
 			$this->constants();
 
 			// Add WordPress default add_theme_support
-			add_action('after_setup_theme', array(&$this, 'theme_support'));
+			add_action('after_setup_theme', array( $this, 'theme_support' ) );
 
 			// Add localization support
 			add_action('init', array( $this, 'language' ) );
