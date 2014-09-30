@@ -1,0 +1,10 @@
+/**
+ * Editor Stylesheet
+ *
+ * This stylesheet is used for all the WYSIWYG editor boxes in WordPress.
+ * Include all the layout style here and reset the body element to display nicely.
+ */
+@import "stylesheets/layout.css";
+
+/* Add overwrites as needed so that the content of the editor field is attractive and not broken */
+body { padding: 1em; background: #fff; }

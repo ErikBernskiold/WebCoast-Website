@@ -1,0 +1,12 @@
+/*
+Theme Name: WebCoast
+Theme URI: http://www.xldstudios.com/
+Description: Custom framework to speed up theme development.
+Author: XLD Studios
+Author URI: http://www.xldstudios.com/
+Version: 1.2
+
+The stylesheet file is used as a placeholder to keep WordPress happy.
+All styles are written in SCSS/SASS (see sass directory) and saved and minified in the stylesheets folder.
+Styles are included via core/functions/head.php
+*/
