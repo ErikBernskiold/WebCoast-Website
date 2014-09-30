@@ -24,27 +24,27 @@ get_header(); ?>
 				<p class="intro"><?php _e('Nobody has time to go to all of WebCoast, unfortunately. Luckily, many of the sessions are recorded and made available here below for your viewing pleasure.', 'webcoast'); ?></p>
 			</div>
 
-			<ul class="video-archive small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+			<?php
+				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-				<?php
-					$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+				$video_args = array(
+					'post_type'      => 'program',
+					'paged'          => $paged,
+					'posts_per_page' => 9,
+					'meta_query'     => array(
+						array(
+							'key'   => 'video_exists',
+							'value' => true
+						)
+					),
+				);
 
-					$video_args = array(
-						'post_type'      => 'program',
-						'paged'          => $paged,
-						'posts_per_page' => 9,
-						'meta_query'     => array(
-							array(
-								'key'   => 'video_exists',
-								'value' => true
-							)
-						),
-					);
+				$video = new WP_Query( $video_args );
+			?>
 
-					$video = new WP_Query( $video_args );
-				?>
+			<?php if( $video->have_posts() ) : ?>
 
-				<?php if( $video->have_posts() ) : ?>
+				<ul class="video-archive small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 
 					<?php while( $video->have_posts() ) : $video->the_post(); ?>
 
@@ -52,17 +52,17 @@ get_header(); ?>
 
 					<?php endwhile; ?>
 
-					<?php
-				   	if(function_exists('wp_pagenavi')) :
-				   		wp_pagenavi(); // Add support for the WP-Pagenavi plugin if it is installed. Otherwise use the default.
-				   	else :
-				   		webcoast_pagination();
-				   	endif;
-				   ?>
+				</ul>
 
-				<?php endif; wp_reset_postdata(); ?>
+				<?php
+			   	if(function_exists('wp_pagenavi')) :
+			   		wp_pagenavi(); // Add support for the WP-Pagenavi plugin if it is installed. Otherwise use the default.
+			   	else :
+			   		webcoast_pagination( $video->max_num_pages );
+			   	endif;
+			   ?>
 
-			</ul>
+			<?php endif; wp_reset_postdata(); ?>
 
 		</div>
 	</div>
