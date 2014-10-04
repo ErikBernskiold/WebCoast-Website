@@ -182,7 +182,7 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_509b65ddb0193',
+				'key' => 'field_509b65ddb0194',
 				'label' => 'Allmän Knapp: Länk',
 				'name' => 'home_box_button_link',
 				'type' => 'text',
