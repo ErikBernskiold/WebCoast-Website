@@ -44,8 +44,8 @@ get_header(); ?>
 			</div>
 			<?php if ( 1 != get_post_meta( $post->ID, 'home_forsaljning', true ) ) : ?>
 			<div class="conference-callout large-12 medium-12 small-24 columns">
-				<span class="conference-countdown"><?php _e( 'Thanks for this year. See you again next year!', 'webcoast' ); ?></span>
-				<a href="<?php echo home_url( _x( '/videos/', 'slug for videos archive', 'webcoast' ) ); ?>" class="button large cta-button"><?php _e( 'See the recorded sessions &raquo;', 'webcoast' ); ?></a>
+				<span class="conference-countdown"><?php the_field( 'home_box_text' ); ?></span>
+				<a href="<?php the_field( 'home_box_button_link' ); ?>" class="button large cta-button"><?php the_field( 'home_box_button_title' ); ?></a>
 			</div>
 			<?php else : ?>
 				<div class="conference-callout large-12 medium-12 small-24 columns">
