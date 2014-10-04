@@ -129,7 +129,7 @@
 						<h2><?php _e( 'Recorded Sessions', 'webcoast' ); ?></h2>
 						<p class="intro"><?php _e('Nobody has time to go to all of WebCoast, unfortunately. Luckily, many of the sessions are recorded and made available here below for your viewing pleasure.', 'webcoast'); ?></p>
 
-						<div class="video-archive row">
+						<div class="video-archive small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 
 							<?php while($video->have_posts()) : $video->the_post(); ?>
 
