@@ -28,6 +28,7 @@
 					<li><a href="https://twitter.com/webcoast"><i class="icon-twitter icon-2x"></i></a></li>
 					<li><a href="http://www.flickr.com/groups/webcoast/"><i class="icon-flickr icon-2x"></i></a></li>
 					<li><a href="https://plus.google.com/+WebcoastSe/"><i class="icon-google-plus icon-2x"></i></a></li>
+					<li><a href="http://www.mynewsdesk.com/se/webcoast"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icon-mynewsdesk.png" alt="MyNewsdesk"></a></li>
 				</ul>
 			</div>
 		</div>
