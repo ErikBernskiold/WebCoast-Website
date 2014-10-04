@@ -62,6 +62,9 @@ get_header(); ?>
 
 				<?php endif; wp_reset_postdata(); ?>
 			</div>
+
+			<p style="margin-top: 2rem;"><a href="<?php echo home_url( _x( '/videos/', 'video archive slug', 'webcoast' ) ); ?>" class="button expand"><?php _e( 'Till videoarkivet &raquo;', 'webcoast' ); ?></a></p>
+
 		</div>
 
 	</div>
