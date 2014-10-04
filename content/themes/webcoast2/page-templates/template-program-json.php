@@ -174,19 +174,20 @@ foreach ( $days as $day ) :
 
 			// Add all the items to the array
 			$program_array[ $day->slug ][] = array(
-				'title' => get_the_title(),
-				'date' => $program_date_object->format( 'Y-m-d' ),
-				'summary' => $summary,
-				'start_time' => $start_time_object->format( 'Y-m-d H:i:s O' ),
-				'end_time' => $end_time_object->format( 'Y-m-d H:i:s O' ),
-				'video_embed' => $video_embed,
+				'id'              => get_the_id(),
+				'title'           => get_the_title(),
+				'date'            => $program_date_object->format( 'Y-m-d' ),
+				'summary'         => $summary,
+				'start_time'      => $start_time_object->format( 'Y-m-d H:i:s O' ),
+				'end_time'        => $end_time_object->format( 'Y-m-d H:i:s O' ),
+				'video_embed'     => $video_embed,
 				'video_thumbnail' => $video_thumbnail,
-				'content' => get_the_content(),
-				'speaker' => $speakers_array,
-				'room' => $rooms_array,
-				'program_day' => $program_days_array,
-				'subject' => $subjects_array,
-				'type' => $types_array,
+				'content'         => get_the_content(),
+				'speaker'         => $speakers_array,
+				'room'            => $rooms_array,
+				'program_day'     => $program_days_array,
+				'subject'         => $subjects_array,
+				'type'            => $types_array,
 			);
 
 		endwhile;
