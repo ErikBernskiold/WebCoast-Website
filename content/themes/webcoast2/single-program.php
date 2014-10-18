@@ -83,7 +83,21 @@ get_header(); ?>
 								<?php if( get_field('program_talare') ) : ?>
 								<div class="event-detail-item" id="event-speaker">
 									<?php _e('Who?', 'webcoast'); ?>
-									<span><?php if(get_field('program_talare')) : $speaker_counter = 1; while(the_repeater_field('program_talare')) : ?><?php if( $speaker_counter > 1 ) : ?>, <?php endif; ?><a href="<?php the_sub_field('program_talare_url'); ?>"><?php the_sub_field('program_talare_namn'); ?></a><?php $speaker_counter++; endwhile; endif; ?></span>
+									<span>
+										<?php if(get_field('program_talare')) : $speaker_counter = 1; while(the_repeater_field('program_talare')) : ?>
+											<?php if( $speaker_counter > 1 ) : ?>, <?php endif; ?>
+
+											<?php if ( get_sub_field( 'program_talare_url' ) ) : ?>
+												<a href="<?php the_sub_field('program_talare_url'); ?>">
+													<?php the_sub_field('program_talare_namn'); ?>
+												</a>
+											<?php elseif ( get_sub_field( 'program_talare_twitter' ) ) : ?>
+												<a href="https://twitter.com/<?php echo str_replace( '@', '', get_sub_field( 'program_talare_twitter' ) ); ?>">
+													<?php the_sub_field('program_talare_namn'); ?>
+												</a>
+											<?php endif; ?>
+										<?php $speaker_counter++; endwhile; endif; ?>
+									</span>
 								</div>
 								<?php endif; ?>
 

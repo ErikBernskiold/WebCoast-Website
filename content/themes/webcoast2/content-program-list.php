@@ -32,8 +32,8 @@
 							<a href="<?php the_sub_field('program_talare_url'); ?>">
 								<?php the_sub_field('program_talare_namn'); ?>
 							</a>
-						<?php else : ?>
-							<a href="https://twitter.com/<?php echo str_replace( '@', '', get_sub_field( 'program_talare_url' ) ); ?>">
+						<?php elseif ( get_sub_field( 'program_talare_twitter' ) ) : ?>
+							<a href="https://twitter.com/<?php echo str_replace( '@', '', get_sub_field( 'program_talare_twitter' ) ); ?>">
 								<?php the_sub_field('program_talare_namn'); ?>
 							</a>
 						<?php endif; ?>
