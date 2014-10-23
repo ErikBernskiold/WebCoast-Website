@@ -414,10 +414,10 @@ ul {
   }
 
   .cta-button {
-    background: #9E1234;
+    background: darken( $primary-color, 10% );
 
     &:hover {
-      background: #550015;
+      background: darken( $primary-color, 20% );
     }
   }
 
