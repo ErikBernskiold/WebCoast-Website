@@ -132,22 +132,3 @@ if ( ! function_exists( 'webcoast_delete_query_transients' ) ) :
 	add_action( 'edit_post', 'webcoast_delete_query_transients' );
 
 endif;
-
-if ( ! function_exists( 'webcoast_delete_terms_transients' ) ) :
-
-	/**
-	 * webcoast_delete_terms_transients()
-	 *
-	 * Clear transients for certain terms when a term is updated.
-	 *
-	 * @return void
-	 */
-	function webcoast_delete_terms_transients() {
-
-
-
-	}
-
-	add_action( 'edit_term', 'webcoast_delete_terms_transients' );
-
-endif;
