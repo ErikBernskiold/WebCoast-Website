@@ -112,7 +112,7 @@ get_header(); ?>
 		<?php endif; wp_reset_postdata(); ?>
 
 		<?php
-		$sponsor_types = webcoast_get_transient_terms( 'webcoast_frontpage_sponsor_types_' . ICL_LANGUAGE_CODE, 'sponsortyp', array(
+		$sponsor_types = webcoast_get_transient_terms( 'wc_fp_sptypes_' . ICL_LANGUAGE_CODE, 'sponsortyp', array(
 			'orderby' => 'id',
 			'exclude' => array( 88, 69 ),
 		), WEEK_IN_SECONDS * 4 );
