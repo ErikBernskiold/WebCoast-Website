@@ -66,3 +66,63 @@ if ( ! function_exists( 'webcoast_get_transient_terms' ) ) :
 	}
 
 endif;
+
+if ( ! function_exists( 'webcoast_delete_query_transients' ) ) :
+
+	/**
+	 * webcoast_delete_query_transients()
+	 *
+	 * This function is run on the edit post hook
+	 * and will go through some cases and clear transients that we have set
+	 * elsewhere in the theme. This is to make sure
+	 * the page displays up to date.
+	 *
+	 * @return void
+	 */
+	function webcoast_delete_query_transients( $post_id, $post ) {
+
+		// Set the available languages
+		// @todo This should ideally be retrieved automatically from WPML
+		$languages = array( 'en', 'sv' );
+
+		// If this is just a revision, don't do anything
+		if ( wp_is_post_revision( $post_id ) )
+			return;
+
+		// If we update the slider, clear its transient for all languages
+		if ( 'ilmenite_slider' == $post->post_type ) {
+			foreach ( $languages as $language ) {
+				delete_transient( 'wc_slider_' . $language );
+			}
+		}
+
+		// If we update a post, clear its transient for all languages
+		if ( 'post' == $post->post_type ) {
+			foreach ( $languages as $language ) {
+				delete_transient( 'wc_fp_blogq_' . $language );
+			}
+		}
+
+		// If we update a sponsor, clear its transient for all languages
+		if ( 'sponsor' == $post->post_type ) {
+
+			// Get the sponsor types for the saved post
+			$sponsors = get_the_terms( $post->ID, 'sponsortyp' );
+
+			// Loop through the sponsor tyupes
+			foreach ( $sponors as $sponsor ) {
+
+				// Also loop through all languages
+				foreach ( $languages as $language ) {
+					delete_transient( 'wc_sp_' . $sponsor->slug . '_' . $language );
+				}
+
+			}
+
+		}
+
+	}
+
+	add_action( 'edit_post', 'webcoast_delete_query_transients' );
+
+endif;
