@@ -79,7 +79,10 @@ if ( ! function_exists( 'webcoast_delete_query_transients' ) ) :
 	 *
 	 * @return void
 	 */
-	function webcoast_delete_query_transients( $post_id, $post ) {
+	function webcoast_delete_query_transients( $post_id ) {
+
+		// Get the post data
+		$post = get_post( $post_id );
 
 		// Set the available languages
 		// @todo This should ideally be retrieved automatically from WPML
