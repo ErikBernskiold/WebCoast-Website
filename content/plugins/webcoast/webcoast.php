@@ -75,9 +75,6 @@ class WebCoast {
 	 */
 	function functions() {
 
-		// Set ACF to Lite mode
-		define( 'ACF_LITE', true );
-
 		// Load ACF Fields
 		require_once( WC_PLUGIN_DIR . '/inc/advanced-custom-fields.php' );
 
