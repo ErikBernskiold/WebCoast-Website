@@ -50,7 +50,7 @@ get_header(); ?>
 							)
 						);
 
-						$query_platinum = webcoast_get_transient_query( 'webcoast_sponsor_' . $current_year . '_platinum_query', $query_platinum_args, DAY_IN_SECONDS );
+						$query_platinum = webcoast_get_transient_query( 'wc_sp_' . $current_year . '_plat', $query_platinum_args, DAY_IN_SECONDS );
 					?>
 
 					<?php if($query_platinum->have_posts()) : ?>
@@ -94,7 +94,7 @@ get_header(); ?>
 							)
 						);
 
-						$query_gold = webcoast_get_transient_query( 'webcoast_sponsor_' . $current_year . '_gold_query', $query_gold_args, DAY_IN_SECONDS );
+						$query_gold = webcoast_get_transient_query( 'wc_sp_' . $current_year . '_gold', $query_gold_args, DAY_IN_SECONDS );
 					?>
 
 					<?php if($query_gold->have_posts()) : ?>
@@ -138,7 +138,7 @@ get_header(); ?>
 							)
 						);
 
-						$query_silver = webcoast_get_transient_query( 'webcoast_sponsor_' . $current_year . '_silver_query', $query_silver_args, DAY_IN_SECONDS );
+						$query_silver = webcoast_get_transient_query( 'wc_sp_' . $current_year . '_silver', $query_silver_args, DAY_IN_SECONDS );
 					?>
 
 					<?php if($query_silver->have_posts()) : ?>
@@ -182,7 +182,7 @@ get_header(); ?>
 							)
 						);
 
-						$query_bronze = webcoast_get_transient_query( 'webcoast_sponsor_' . $current_year . '_bronze_query', $query_bronze_args, DAY_IN_SECONDS );
+						$query_bronze = webcoast_get_transient_query( 'wc_sp_' . $current_year . '_bronze', $query_bronze_args, DAY_IN_SECONDS );
 					?>
 
 					<?php if($query_bronze->have_posts()) : ?>
@@ -228,7 +228,7 @@ get_header(); ?>
 							)
 						);
 
-						$query_mediapartner = webcoast_get_transient_query( 'webcoast_sponsor_' . $current_year . '_mediapartner_query', $query_mediapartner_args, DAY_IN_SECONDS );
+						$query_mediapartner = webcoast_get_transient_query( 'wc_sp_' . $current_year . '_media', $query_mediapartner_args, DAY_IN_SECONDS );
 					?>
 
 					<?php if($query_mediapartner->have_posts()) : ?>
