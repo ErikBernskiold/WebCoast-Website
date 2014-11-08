@@ -121,8 +121,33 @@ if ( ! function_exists( 'webcoast_delete_query_transients' ) ) :
 
 		}
 
+		if ( 'aterblick' == $post->post_type ) {
+			foreach ( $languages as $language ) {
+				delete_transient( 'webcoast_rp_years_' . $language );
+			}
+		}
+
 	}
 
 	add_action( 'edit_post', 'webcoast_delete_query_transients' );
+
+endif;
+
+if ( ! function_exists( 'webcoast_delete_terms_transients' ) ) :
+
+	/**
+	 * webcoast_delete_terms_transients()
+	 *
+	 * Clear transients for certain terms when a term is updated.
+	 *
+	 * @return void
+	 */
+	function webcoast_delete_terms_transients() {
+
+
+
+	}
+
+	add_action( 'edit_term', 'webcoast_delete_terms_transients' );
 
 endif;

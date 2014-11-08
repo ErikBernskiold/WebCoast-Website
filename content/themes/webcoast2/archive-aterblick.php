@@ -40,7 +40,7 @@ get_header(); ?>
 						'post__not_in'   => array( 4371 ), // Exclude "Hur det började"
 					);
 
-					$aterblick_year = webcoast_get_transient_query( 'webcoast_retrospect_yearlist', $aterblick_year_args, WEEK_IN_SECONDS * 4 );
+					$aterblick_year = webcoast_get_transient_query( 'webcoast_rp_years_' ICL_LANGUAGE_CODE , $aterblick_year_args, WEEK_IN_SECONDS * 4 );
 				?>
 
 				<?php if($aterblick_year->have_posts()) : ?>
