@@ -59,6 +59,15 @@ class WebCoast {
 		// Include the WebCoast Participants Class
 		include( WC_PLUGIN_DIR . '/inc/class-webcoast-participants.php' );
 
+		// Add custom query vars
+		add_filter( 'query_vars', array( $this, 'register_query_vars' ) );
+
+		// Add endpoints
+		add_action( 'init', array( $this, 'add_endpoints' ) );
+
+		// Add the json event template
+		add_action( 'template_redirect', array( $this, 'json_template' ) );
+
 	}
 
 	/**
@@ -122,6 +131,46 @@ class WebCoast {
 		require_once( WC_TAXONOMIES . '/room.php' );
 
 	}
+
+		/**
+		 * Register Custom Query Vars
+		 */
+		public function register_query_vars( $vars ) {
+			$vars[] = 'json';
+
+			return $vars;
+		}
+
+		/**
+		 * Adds /json endpoint everywhere
+		 *
+		 * Used to display a custom template (see below)
+		 * for the program JSON
+		 */
+		public function add_endpoints() {
+
+			add_rewrite_endpoint( 'json', EP_ALL );
+
+		}
+
+		/**
+		 * Load JSON Template on Endpoint Call
+		 *
+		 * When the add endpoint is called, we want to display a
+		 * custom template, which is the program JSON feed.
+		 */
+		public function json_template() {
+
+			global $wp_query;
+
+			// If this request doesn't contain the json endpoint, quit here.
+			if ( ! isset( $wp_query->query_vars['json'] ) &! is_page( 'program' ) )
+				return;
+
+			include WC_PLUGIN_DIR . '/templates/json-template.php';
+			exit;
+
+		}
 
 }
 
