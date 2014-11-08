@@ -20,7 +20,7 @@ class WebCoast_Participants {
 
 		// This should eventually be turned into an option
 		// so that it is easily updated every year.
-		$this->event_id = '2405484870';
+		$this->event_id = '14091934355';
 
 		// Total Amount of Tickets
 		// Should also be turned into an option
