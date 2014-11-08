@@ -21,7 +21,7 @@ get_header(); ?>
 			'posts_per_page' => -1,
 		);
 
-		$slider_query = webcoast_get_transient_query( 'webcoast_slider_' . ICL_LANGUAGE_CODE, $slider_query_args, DAY_IN_SECONDS );
+		$slider_query = webcoast_get_transient_query( 'wc_slider_' . ICL_LANGUAGE_CODE, $slider_query_args, DAY_IN_SECONDS );
 	?>
 
 	<?php if ( $slider_query->have_posts() ) : ?>
@@ -76,7 +76,7 @@ get_header(); ?>
 				'posts_per_page' => 2,
 			);
 
-			$blog_query = webcoast_get_transient_query( 'webcoast_frontpage_blog_query_' . ICL_LANGUAGE_CODE , $blog_query_args, HOUR_IN_SECONDS * 6 );
+			$blog_query = webcoast_get_transient_query( 'wc_fp_blogq_' . ICL_LANGUAGE_CODE , $blog_query_args, HOUR_IN_SECONDS * 6 );
 		?>
 
 		<?php if ( $blog_query->have_posts() ) : ?>
