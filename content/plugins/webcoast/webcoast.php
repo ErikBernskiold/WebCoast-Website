@@ -4,7 +4,7 @@
 	Plugin URI: http://www.webcoast.se
 	Description: Implements WebCoast specific functions not suitable for a theme.
 	Author: Erik Bernskiold, XLD Studios
-	Version: 0.9
+	Version: 0.9.1
 	Author URI: http://www.xldstudios.com/
 	Text Domain: webcoast
  */
