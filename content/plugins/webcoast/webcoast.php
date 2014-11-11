@@ -161,7 +161,10 @@ class WebCoast {
 			global $wp_query;
 
 			// If this request doesn't contain the json endpoint, quit here.
-			if ( ! isset( $wp_query->query_vars['json'] ) &! is_page( 'program' ) )
+			if ( ! isset( $wp_query->query_vars['json'] ) )
+				return;
+
+			if ( ! is_page( 'program' ) )
 				return;
 
 			include WC_PLUGIN_DIR . '/templates/json-template.php';
