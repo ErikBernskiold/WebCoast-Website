@@ -28,6 +28,7 @@ content/*
 content/plugins/*
 !content/plugins/webcoast/
 content/plugins/webcoast/data/
+content/plugins/webcoast/inc/class-webcoast-participants.php
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
