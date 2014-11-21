@@ -35,6 +35,9 @@ if ( ! class_exists( 'WebCoast_Framework' ) ) :
 			// Add navigation menus
 			add_action( 'after_setup_theme', array( $this, 'register_navigation_menus' ) );
 
+			// Register options page
+			add_action( 'init', array( $this, 'add_options_page' ) );
+
 		}
 
 		/**
@@ -159,6 +162,15 @@ if ( ! class_exists( 'WebCoast_Framework' ) ) :
 				require_once( $locale_file );
 			}
 
+		}
+
+		function add_options_page() {
+
+			if ( function_exists( 'acf_add_options_page' ) ) {
+
+				acf_add_options_page();
+
+			}
 		}
 
 	} // End: class Theme() {}
