@@ -142,7 +142,7 @@ get_header(); ?>
 							),
 						);
 
-						$sponsor_query = webcoast_get_transient_query( 'wc_sp_' . $sponsor->slug . '_' . ICL_LANGUAGE_CODE , $sponsor_query_args, DAY_IN_SECONDS );
+						$sponsor_query = webcoast_get_transient_query( 'wc_sp_' . get_field('sponsor_display_year', 'option') . '_' . $sponsor->slug . '_' . ICL_LANGUAGE_CODE , $sponsor_query_args, DAY_IN_SECONDS );
 
 					if ( $sponsor_query->have_posts() ) : ?>
 					<article class="sponsor-row">
