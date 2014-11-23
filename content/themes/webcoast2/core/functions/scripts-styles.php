@@ -54,9 +54,9 @@ function webcoast_enqueue_scripts() {
 	// Register
 	// wp_register_script( $handle, $src, $deps, $ver, $in_footer );
 	wp_register_script( 'modernizr', THEME_JS_URI . '/vendor/custom.modernizr.js', false, '2.6.2', false );
-	wp_register_script( 'scripts', THEME_JS_URI . '/main.min.js', array( 'jquery', 'packery', 'imagesloaded' ), THEME_VERSION, false );
-	wp_register_script( 'imagesloaded', THEME_JS_URI . '/vendor/imagesloaded.pkgd.min.js', array( 'jquery' ), '3.1.8', false );
-	wp_register_script( 'packery', THEME_JS_URI . '/vendor/packery.pkgd.min.js', array( 'jquery', 'imagesloaded' ), '1.3.0', false );
+	wp_register_script( 'scripts', THEME_JS_URI . '/main.min.js', array( 'jquery', 'packery', 'imagesloaded' ), THEME_VERSION, true );
+	wp_register_script( 'imagesloaded', THEME_JS_URI . '/vendor/imagesloaded.pkgd.min.js', array( 'jquery' ), '3.1.8', true );
+	wp_register_script( 'packery', THEME_JS_URI . '/vendor/packery.pkgd.min.js', array( 'jquery', 'imagesloaded' ), '1.3.0', true );
 	wp_register_script( 'foundation', THEME_JS_URI . '/foundation/foundation.js', array( 'jquery' ), THEME_VERSION, true );
 	wp_register_script( 'foundation-magellan', THEME_JS_URI . '/foundation/foundation.magellan.js', array( 'jquery', 'foundation' ), THEME_VERSION, true );
 
