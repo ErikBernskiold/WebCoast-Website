@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WebCoast Theme\n"
-"POT-Creation-Date: 2014-11-08 11:52+0100\n"
-"PO-Revision-Date: 2014-11-08 11:53+0100\n"
+"POT-Creation-Date: 2014-11-23 11:39+0100\n"
+"PO-Revision-Date: 2014-11-23 11:39+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -226,11 +226,11 @@ msgstr "Sidfot: Meny 1"
 msgid "Footer: Second Navigation"
 msgstr "Sidfot: Meny 2"
 
-#: ../core/functions/ui.php:130
+#: ../core/functions/ui.php:137
 msgid "Navigation"
 msgstr "Navigation"
 
-#: ../core/theme.php:108
+#: ../core/theme.php:111
 msgid "Main Navigation"
 msgstr "Huvudnavigation"
 
@@ -341,9 +341,17 @@ msgstr "Fyll i din e-postadress"
 msgid "Subscribe"
 msgstr "Skicka"
 
-#: ../page-templates/template-inspiration.php:22
+#: ../page-templates/template-inspiration.php:23
 msgid "Inspiration"
 msgstr "Inspiration"
+
+#: ../page-templates/template-inspiration.php:24
+msgid ""
+"Experience just how fun WebCoast is through the imagery gathered by "
+"attendees over the years."
+msgstr ""
+"Upplev just hur roligt det är på WebCoast genom dessa underbara bilder som "
+"deltagare tagit under åren."
 
 #: ../page-templates/template-program.php:24 ../single-aterblick.php:160
 msgid "Program"
@@ -362,6 +370,7 @@ msgstr ""
 "på WebCoast ser ut."
 
 #: ../page-templates/template-program.php:30
+#: ../page-templates/template-videos.php:31
 msgid "Filter"
 msgstr "Filtrera"
 
@@ -403,6 +412,18 @@ msgstr ""
 "Ingen har tid att gå på hela WebCoast, tyvärr. Lyckligtvis spelas många av "
 "sessionerna in och finns tillgängliga nedan för att du skall kunna titta på "
 "dem nu i efterhand och uppleva lite mer av WebCoast."
+
+#: ../page-templates/template-videos.php:32
+msgid "Drill down further into the videos."
+msgstr "Leta djupare bland videorna."
+
+#: ../page-templates/template-videos.php:44
+msgid "Year"
+msgstr "År"
+
+#: ../page-templates/template-videos.php:70
+msgid "Subject"
+msgstr "Ämne"
 
 #: ../search.php:26
 #, php-format
