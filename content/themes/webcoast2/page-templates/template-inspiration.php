@@ -17,11 +17,14 @@ get_header(); ?>
 
 <div class="main inspiration-page">
 
-	<div class="row">
-		<div class="small-24 columns">
-			<h1 class="page-title"><?php _e( 'Inspiration', 'webcoast' ); ?></h1>
+	<section class="bg-primary inspiration-page-header">
+		<div class="row">
+			<div class="small-24 columns">
+				<h1 class="page-title mb0"><?php _e( 'Inspiration', 'webcoast' ); ?></h1>
+				<p class="intro"><?php _e( 'Experience just how fun WebCoast is through the imagery gathered by attendees over the years.', 'webcoast' ); ?></p>
+			</div>
 		</div>
-	</div>
+	</section>
 
 	<?php
 		$inspiration_query_args = array(

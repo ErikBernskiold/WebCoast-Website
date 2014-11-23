@@ -18,9 +18,11 @@ jQuery(document).ready(function($){
 		jQuery('.responsive-navigation').slideToggle();
 	});
 
-	// Add Inspiration Masonry Layout
-	jQuery('.inspiration-container').masonry({
-		itemSelector: '.inspiration-item'
+	// Inspiration Grid
+	var $container = $('.inspiration-container').imagesLoaded( function() {
+		$container.packery({
+			itemSelector: '.inspiration-item'
+		});
 	});
 
 	/**

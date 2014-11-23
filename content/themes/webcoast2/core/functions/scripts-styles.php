@@ -54,14 +54,16 @@ function webcoast_enqueue_scripts() {
 	// Register
 	// wp_register_script( $handle, $src, $deps, $ver, $in_footer );
 	wp_register_script( 'modernizr', THEME_JS_URI . '/vendor/custom.modernizr.js', false, '2.6.2', false );
-	wp_register_script( 'scripts', THEME_JS_URI . '/main.min.js', array( 'jquery', 'masonry' ), THEME_VERSION, false );
-	wp_register_script( 'masonry', THEME_JS_URI . '/vendor/masonry.pkgd.min.js', array( 'jquery' ), '3.1.2', false );
+	wp_register_script( 'scripts', THEME_JS_URI . '/main.min.js', array( 'jquery', 'packery', 'imagesloaded' ), THEME_VERSION, false );
+	wp_register_script( 'imagesloaded', THEME_JS_URI . '/vendor/imagesloaded.pkgd.min.js', array( 'jquery' ), '3.1.8', false );
+	wp_register_script( 'packery', THEME_JS_URI . '/vendor/packery.pkgd.min.js', array( 'jquery', 'imagesloaded' ), '1.3.0', false );
 
 
 	// Enqueue
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'scripts' );
-	wp_enqueue_script( 'masonry' );
+	wp_enqueue_script( 'imagesloaded' );
+	wp_enqueue_script( 'packery' );
 
 	$translation_array = array(
 		'ajax_url' => admin_url( 'admin-ajax.php' ),

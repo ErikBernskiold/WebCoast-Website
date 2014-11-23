@@ -421,6 +421,9 @@ ul {
 .mb3 { margin-bottom: 3rem; }
 .mb4 { margin-bottom: 4rem; }
 
+// Backgrounds
+.bg-primary { background-color: $primary-color; }
+
 /**
  * Pages
  */
@@ -591,6 +594,12 @@ ul {
       }
     }
 
+.page-title {}
+
+  .bg-primary .page-title {
+    color: white;
+  }
+
 /**
  * Sidebar
  */
@@ -614,13 +623,42 @@ ul {
 /**
  * Inspiration Page
  */
-.inspiration-page {}
+.inspiration-page {
+  margin: 0;
+  background: $primary-color;
+}
+
+  .inspiration-page-header {
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+
+    .intro {
+      color: white;
+    }
+  }
+
+  .inspiration-container {
+    overflow: hidden;
+  }
 
   .inspiration-item {
     opacity: 0.8;
     width: 20%;
     float: left;
     transition: 0.2s opacity;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+    }
+
+    @media (max-width: $medium-screen) {
+      width: 33%;
+    }
+
+    @media (max-width: $small-screen) {
+      width: 50%;
+    }
 
     &:hover {
       opacity: 1;
