@@ -19,7 +19,7 @@ get_header(); ?>
 
 	<section class="bg-primary inspiration-page-header">
 		<div class="row">
-			<div class="small-24 columns">
+			<div class="small-24 large-18 large-centered columns">
 				<h1 class="page-title mb0"><?php _e( 'Inspiration', 'webcoast' ); ?></h1>
 				<p class="intro"><?php _e( 'Experience just how fun WebCoast is through the imagery gathered by attendees over the years.', 'webcoast' ); ?></p>
 			</div>
