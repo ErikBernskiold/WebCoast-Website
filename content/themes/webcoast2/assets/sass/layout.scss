@@ -635,6 +635,7 @@ ul {
   /* Archive Page */
   .video-item {
     margin-bottom: 1.5em;
+    word-break: break-word;
   }
 
     @media all and (min-width: $large-screen) {
