@@ -162,3 +162,104 @@ function webcoast_program_filter_callback() {
 
 }
 endif;
+
+if( ! function_exists( 'webcoast_video_filter_callback' ) ) :
+
+	/**
+	 * Videos Filter
+	 *
+	 * AJAX callback for the videos archive filtering.
+	 */
+	function webcoast_video_filter_callback() {
+
+		// Check that the nonce verifies for the post request
+		if( ! wp_verify_nonce( $_POST['nonce'], 'webcoast-ajax-nonce' ) )
+			die( 'Error, the nonce did not verify for your request.' );
+
+		// Get query variables
+		$subjects = $_POST['subjects'];
+		$years    = $_POST['years'];
+
+		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
+		$video_args = array(
+			'post_type'      => 'program',
+			'paged'          => $paged,
+			'posts_per_page' => 24,
+			'meta_query'     => array(
+				array(
+					'key'   => 'video_exists',
+					'value' => true,
+				)
+			),
+		);
+
+		if ( $subjects ) {
+
+			// No pagination
+			$video_args['posts_per_page'] = -1;
+
+			// Set subject query
+			$video_args['tax_query'] = array(
+				array(
+					'taxonomy' => 'videoamne',
+					'field'    => 'ID',
+					'terms'    => $subjects,
+				),
+			);
+
+		}
+
+		if ( $years ) {
+
+			// No pagination
+			$video_args['posts_per_page'] = -1;
+
+			// Set the years query
+			$video_args['tax_query'] = array(
+				array(
+					'taxonomy' => 'year',
+					'field'    => 'ID',
+					'terms'    => $years,
+				),
+			);
+
+		}
+
+		$video = new WP_Query( $video_args );
+		?>
+
+		<?php if( $video->have_posts() ) : ?>
+
+			<ul class="video-archive small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+
+				<?php while( $video->have_posts() ) : $video->the_post(); ?>
+
+					<?php get_template_part('content', 'sessionvideo'); ?>
+
+				<?php endwhile; ?>
+
+			</ul>
+
+			<?php
+		   	if(function_exists('wp_pagenavi')) :
+		   		wp_pagenavi(); // Add support for the WP-Pagenavi plugin if it is installed. Otherwise use the default.
+		   	else :
+		   		webcoast_pagination( $video->max_num_pages );
+		   	endif;
+		   ?>
+
+		<?php endif; wp_reset_postdata();
+
+		$output = ob_get_clean();
+
+		echo $output;
+
+		die();
+
+	}
+
+	add_action( 'wp_ajax_nopriv_webcoast_video_filter', 'webcoast_video_filter_callback' );
+	add_action( 'wp_ajax_webcoast_video_filter', 'webcoast_video_filter_callback' );
+
+endif;
