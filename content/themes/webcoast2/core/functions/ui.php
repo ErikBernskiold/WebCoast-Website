@@ -117,13 +117,20 @@ function webcoast_get_nav_menu() {
         // Define menu variable
         $menu = '';
 
-        $menu .= wp_nav_menu(array(
-            'theme_location'  => 'primary-menu',
-            'container'       => 'nav',
-            'container_class' => 'primary-navigation hide-for-small',
-            'menu_class'      => 'row',
-            'echo'            => 0,
-        ));
+        $menu .= '<div class="hide-for-small">';
+
+            $menu .= '<nav class="primary-navigation" data-magellan-expedition="fixed">';
+
+                $menu .= wp_nav_menu(array(
+                    'theme_location'  => 'primary-menu',
+                    'container'       => '',
+                    'menu_class'      => 'row',
+                    'echo'            => 0,
+                ));
+
+            $menu .= '</nav>';
+
+        $menu .= '</div>';
 
         $menu .= '<div class="show-for-small">';
             $menu .= '<div class="responsive-navigation-toggle">';
