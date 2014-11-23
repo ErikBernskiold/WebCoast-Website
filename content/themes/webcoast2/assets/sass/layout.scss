@@ -117,23 +117,27 @@ body {
       margin: 0 -5px 1px 0;
     }
 
+    li:hover {
+
+      & > a {
+        background: $primary-color;
+        transition: 0.2s all;
+        color: white;
+      }
+    }
+
       a {
         display: block;
         padding: 0.4em 1em;
         transition: 0.2s all;
         color: #6a696c;
-
-        &:hover {
-          background: #eee;
-          transition: 0.2s all;
-        }
       }
 
   .sub-menu {
     display: none;
     position: absolute;
     left: auto;
-    background: $secondary-color;
+    background: $primary-color;
     z-index: 999;
 
     li {
@@ -141,13 +145,25 @@ body {
       text-align: left;
       margin: 0;
     }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      background: darken( $primary-color, 10% );
+    }
   }
 
-  li:hover .sub-menu {
+  li:hover > .sub-menu {
     display: block;
   }
 
 }
+
+  .admin-bar .primary-navigation.fixed {
+    margin-top: 32px;
+  }
 
 // Responsive Navigation
 .responsive-navigation-toggle {
