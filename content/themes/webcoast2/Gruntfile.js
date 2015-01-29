@@ -14,6 +14,7 @@ module.exports = function(grunt) {
 	      options:{
 	          text_domain: 'webcoast', // Your text domain. Produces my-text-domain.pot
 	          dest: 'languages/', //directory to place the pot file
+	          encoding: 'UTF-8',
 	          keywords: [ //WordPress localisation functions
 	            '__:1',
 	            '_e:1',
