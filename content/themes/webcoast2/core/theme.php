@@ -48,7 +48,7 @@ if ( ! class_exists( 'WebCoast_Framework' ) ) :
 			// Theme Constants
 			define( 'THEME_NAME', 'WebCoast' ); // Name of the theme
 			define( 'THEME_SLUG', 'webcoast' ); // Slug of the theme
-			define( 'THEME_VERSION', '1.3.0' ); // Version of the theme
+			define( 'THEME_VERSION', '1.3.1' ); // Version of the theme
 
 			// Theme Main Directory Constants
 			define( 'THEME_DIR', get_template_directory() ); // Path to theme directory
