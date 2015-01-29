@@ -1,29 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WebCoast Theme\n"
+"Project-Id-Version: webcoast-theme 1.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-29 10:26+0100\n"
-"PO-Revision-Date: 2015-01-29 10:27+0100\n"
-"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
-"Language-Team: \n"
-"Language: sv_SE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
-"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: ..\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: archive-aterblick.php:20
 msgid "Retrospects"
-msgstr "Återblickar"
+msgstr ""
 
 #: archive-aterblick.php:23
 msgid "Now we are doing WebCoast for the fifth time, even better!"
-msgstr "Nu gör vi WebCoast för femte gången. Ännu lite bättre."
+msgstr ""
 
 #: archive-aterblick.php:24
 msgid ""
@@ -33,11 +34,6 @@ msgid ""
 "people meet to talk about communication ont he internet. For both developers "
 "and users, independent of their area."
 msgstr ""
-"Här kan du inspireras av det vi faktiskt gjorde de första två gångerna. "
-"Resultaten av resan som startade med en idé som blev en tweet som blev en "
-"samling människor som gjorde knytkonferensen WebCoast, en mötesplats där "
-"hundratals människor träffas för att prata om kommunikation på internet. För "
-"både utvecklare och användare oberoende av branschtillhörighet."
 
 #: archive-aterblick.php:25
 msgid ""
@@ -49,18 +45,11 @@ msgid ""
 "friends to hold a session with or the open atmosphere that makes us take the "
 "conversations to unknown heights, or depths."
 msgstr ""
-"När vi ser tillbaka på de senaste två åren är det lätt att nostalgiskt börja "
-"minnas höjdpunkter som när deltagarna började fylla entrén på Lindholmen för "
-"att äntligen hälsa på varandra över en räkmacka, energin framför gridden som "
-"blir hjärtat i knytkonferensen, svårigheten att välja session för det är så "
-"mycket man vill vara med på, när deltagare hittar nya vänner som de håller "
-"en session med, den öppna atmosfären som gör att vi lyfter nivån på samtalen "
-"till oanade höjder. Eller djup."
 
 #: archive-aterblick.php:26
 msgid ""
 "The buzz when several hundred people are intensively talking to eachother."
-msgstr "Surret när flera hundra människor pratar intensivt med varandra."
+msgstr ""
 
 #: archive-aterblick.php:27
 msgid ""
@@ -69,33 +58,29 @@ msgid ""
 "in the form of blog posts from participants, news items and articles in "
 "different media, recordings from Bambuser, image slideshows and much more."
 msgstr ""
-"Den här resan gör vi tillsammans. För att vi vill träffas och prata "
-"möjligheter på webben. Här kan du se återblickar på det vi gjorde då,  i "
-"form av blogginlägg från deltagare, nyhetsinslag och artiklar i olika media, "
-"filmer på Bambuser, bildspel och mycket mer."
 
 #: archive-aterblick.php:48
 msgid "Choose a year"
-msgstr "Tidigare konferenser"
+msgstr ""
 
 #: archive-aterblick.php:49
 msgid ""
 "Please choose a year from the list below to see everything that happened at "
 "WebCoast that year."
-msgstr "Välj ett år i listan nedan för att se allt som hände på WebCoast då."
+msgstr ""
 
 #: archive-aterblick.php:66
 msgctxt "video archive slug"
 msgid "/videos/"
-msgstr "/videos/"
+msgstr ""
 
 #: archive-aterblick.php:66
 msgid "To the video archive &raquo;"
-msgstr "Till videoarkivet &raquo;"
+msgstr ""
 
 #: archive-sponsor.php:19 page-templates/template-frontpage.php:124
 msgid "Sponsors"
-msgstr "Sponsorer"
+msgstr ""
 
 #: archive-sponsor.php:20 single-aterblick.php:46
 msgid ""
@@ -103,54 +88,50 @@ msgid ""
 "that you are working on want to sponsor WebCoast? Take a look at <a href="
 "\"http://www.webcoast.se/en/for-sponsors/\">our sponsor information</a>."
 msgstr ""
-"Utan våra sponsorer skulle WebCoast inte vara någonting. Vill du och det "
-"företag du jobbar på vara med och sponsra WebCoast? Ta en titt på <a href="
-"\"http://www.webcoast.se/for-sponsorer/\">vår sponsorinformation</a>."
 
 #: archive-sponsor.php:58 page-templates/sponsors.php:77
 msgid "Platina Sponsor"
-msgstr "Platinasponsor"
+msgstr ""
 
 #: archive-sponsor.php:102 page-templates/sponsors.php:121
 msgid "Gold Coast Sponsor"
-msgstr "Gold Coast Sponsor"
+msgstr ""
 
 #: archive-sponsor.php:146 page-templates/sponsors.php:165
 msgid "Silver Harbour Sponsor"
-msgstr "Silver Harbour Sponsor"
+msgstr ""
 
 #: archive-sponsor.php:190 page-templates/sponsors.php:209
 msgid "Bronze Treasures Sponsor"
-msgstr "Bronze Treasures Sponsor"
+msgstr ""
 
 #: archive-sponsor.php:236 page-templates/sponsors.php:255
 msgid "Media Partner"
-msgstr "Mediapartner"
+msgstr ""
 
 #: archive.php:21
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "Dagsarkiv: %s"
+msgstr ""
 
 #: archive.php:23
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "Månadsarkiv: %s"
+msgstr ""
 
 #: archive.php:25
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "Årsarkiv: %s"
+msgstr ""
 
 #: archive.php:27
 msgid "Blog Archives"
-msgstr "Bloggarkiv"
+msgstr ""
 
 #: comments.php:15
 msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
-"Detta inlägg är lösenordsskyddat. Fyll i lösenordet för att se kommentarerna."
 
 #: comments.php:25
 #, php-format
@@ -161,113 +142,109 @@ msgstr[1] ""
 
 #: comments.php:32 comments.php:46
 msgid "Comment navigation"
-msgstr "Kommentarsnavigation"
+msgstr ""
 
 #: comments.php:33 comments.php:47
 msgid "&larr; Older Comments"
-msgstr "&larr; Äldre kommentarer"
+msgstr ""
 
 #: comments.php:34 comments.php:48
 msgid "Newer Comments &rarr;"
-msgstr "Nyare kommentarer &rarr;"
+msgstr ""
 
 #: comments.php:58
 msgid "Comments are closed."
-msgstr "Kommentarer är stängda."
+msgstr ""
 
 #: content-404.php:16
 msgid "404 - Content Cannot Be Found"
-msgstr "404 - Innehållet kunde inte hittas"
+msgstr ""
 
 #: content-404.php:19
 msgid ""
 "Unfortunately the content you were looking for could not be found. Please "
 "check that the URL is correct or do a search using the form below."
 msgstr ""
-"Tyvärr kunde inte det innehåll du letade efter hittas. Vänligen kontrollera "
-"att URLen är korrekt, eller gör en sökning genom formuläret nedan."
 
 #: content-single.php:22
 msgid "Continue Reading &raquo;"
-msgstr "Läs mer &raquo;"
+msgstr ""
 
 #: content-single.php:30
 msgid "No Comments"
-msgstr "Inga kommentarer"
+msgstr ""
 
 #: content-single.php:30
 msgid "1 Comment"
-msgstr "1 kommentar"
+msgstr ""
 
 #: content-single.php:30
 msgid "% Comments"
-msgstr "% kommentarer"
+msgstr ""
 
 #: content-single.php:30
 msgid "Comments Closed"
-msgstr "Kommentarer stängda"
+msgstr ""
 
 #: content.php:22
 msgid "Läs mer &raquo;"
-msgstr "Läs mer &raquo;"
+msgstr ""
 
 #: core/functions/ajax.php:87 core/functions/ajax.php:148
 msgid ""
 "No program items could be found with this filter. Please try again with "
 "another filter applied."
 msgstr ""
-"Inga sessioner kunde hittas med detta filter. Vänligen försök igen med ett "
-"annat filter."
 
 #: core/functions/sidebars.php:10
 msgid "Sidebar: Blog (Default)"
-msgstr "Sidomeny: Blogg (standard)"
+msgstr ""
 
 #: core/functions/sidebars.php:20
 msgid "Sidebar: Page"
-msgstr "Sidomeny: Sida"
+msgstr ""
 
 #: core/functions/sidebars.php:30
 msgid "Footer: First Navigation"
-msgstr "Sidfot: Meny 1"
+msgstr ""
 
 #: core/functions/sidebars.php:40
 msgid "Footer: Second Navigation"
-msgstr "Sidfot: Meny 2"
+msgstr ""
 
 #: core/functions/ui.php:137
 msgid "Navigation"
-msgstr "Navigation"
+msgstr ""
 
 #: core/theme.php:111
 msgid "Main Navigation"
-msgstr "Huvudnavigation"
+msgstr ""
 
 #: footer.php:16
 #, php-format
 msgid "Copyright &copy; %s WebCoast"
-msgstr "Copyright &copy; %s WebCoast"
+msgstr ""
 
 #: footer.php:25
 msgid "Social Media"
-msgstr "Sociala nätverk"
+msgstr ""
 
 #: header.php:28
 msgid "WebCoast"
-msgstr "WebCoast"
+msgstr ""
 
 #: header.php:33 searchform.php:16
 msgid "What are you looking for?"
-msgstr "Vad letar du efter?"
+msgstr ""
 
 #: header.php:40
 msgctxt "contact us link slug"
 msgid "/contact-us/"
-msgstr "/kontakta-oss/"
+msgstr ""
 
 #: header.php:40
 msgid "Contact Us"
-msgstr "Kontakta oss"
+msgstr ""
 
 #: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:3
 #: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:5
@@ -312,7 +289,7 @@ msgstr "Kontakta oss"
 #: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:15
 #: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:16
 msgid "Hello World"
-msgstr "Hej Världen!"
+msgstr ""
 
 #: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:4
 #: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:6
@@ -344,7 +321,7 @@ msgstr "Hej Världen!"
 #: node_modules/grunt-checktextdomain/test/fixtures/variable-domain-autocorrect.php:17
 msgctxt "verb"
 msgid "Post"
-msgstr "Lägg in"
+msgstr ""
 
 #: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:20
 #: node_modules/grunt-checktextdomain/test/expected/incorrect-domain-autocorrect.php:24
@@ -394,11 +371,11 @@ msgstr[1] ""
 
 #: node_modules/grunt-pot/test/fixtures/some-file.php:3
 msgid "I'm a translatable string."
-msgstr "Jag är en översättningsbar sträng."
+msgstr ""
 
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
 msgid "Me too"
-msgstr "Jag också"
+msgstr ""
 
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
 #, php-format
@@ -410,104 +387,100 @@ msgstr[1] ""
 #. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
 msgid "yyyy-mm-dd"
-msgstr "yyyy-mm-dd"
+msgstr ""
 
 #: page-templates/sponsors.php:37
 msgid "Our Sponsors"
-msgstr "Våra sponsorer"
+msgstr ""
 
 #: page-templates/sponsors.php:39
 msgid ""
 "WebCoast would not be anything without our sponsors. This year, we are proud "
 "to have the following great companies sponsoring us."
 msgstr ""
-"WebCoast skulle inte vara någonting utan våra fantastiska sponsorer. Detta "
-"år är vi stolta över att ha följande företag som sponsorer."
 
 #: page-templates/template-deltagare.php:46
 msgid "Tickets Sold"
-msgstr "Antal sålda biljetter"
+msgstr ""
 
 #: page-templates/template-deltagare.php:50
 msgid "Available Tickets"
-msgstr "Antal biljetter kvar"
+msgstr ""
 
 #: page-templates/template-deltagare.php:54
 msgid "Buy Ticket &raquo;"
-msgstr "Köp biljett &raquo;"
+msgstr ""
 
 #: page-templates/template-deltagare.php:62
 msgid "No."
-msgstr "Nr"
+msgstr ""
 
 #: page-templates/template-deltagare.php:63
 msgid "Image"
-msgstr "Bild"
+msgstr ""
 
 #: page-templates/template-deltagare.php:64
 msgid "Name"
-msgstr "Namn"
+msgstr ""
 
 #: page-templates/template-deltagare.php:65
 msgid "Company"
-msgstr "Företag"
+msgstr ""
 
 #: page-templates/template-deltagare.php:66
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 #: page-templates/template-frontpage.php:43
 msgid "Göteborg"
-msgstr "Göteborg"
+msgstr ""
 
 #: page-templates/template-frontpage.php:52
 msgid "Tickets are now available!"
-msgstr "Biljetter till WebCoast finns nu att köpa!"
+msgstr ""
 
 #: page-templates/template-frontpage.php:53
 msgctxt "slug for ticket purchasing page"
 msgid "/buy-ticket/"
-msgstr "/kop-biljett/"
+msgstr ""
 
 #: page-templates/template-frontpage.php:53
 msgid "Buy Your Ticket &raquo;"
-msgstr "Köp din biljett &raquo;"
+msgstr ""
 
 #: page-templates/template-frontpage.php:86
 msgid "From the blog"
-msgstr "Från bloggen"
+msgstr ""
 
 #: page-templates/template-frontpage.php:103
 msgid "Read more &raquo;"
-msgstr "Läs mer &raquo;"
+msgstr ""
 
 #: page-templates/template-frontpage.php:174
 msgid "Get the latest news via e-mail"
-msgstr "Få senaste nytt via e-post"
+msgstr ""
 
 #: page-templates/template-frontpage.php:178
 msgid "Enter your email address"
-msgstr "Fyll i din e-postadress"
+msgstr ""
 
 #: page-templates/template-frontpage.php:181
 msgid "Subscribe"
-msgstr "Skicka"
+msgstr ""
 
 #: page-templates/template-inspiration.php:23
 msgid "Inspiration"
-msgstr "Inspiration"
+msgstr ""
 
 #: page-templates/template-inspiration.php:24
 msgid ""
 "Experience just how fun WebCoast is through the imagery gathered by "
 "attendees over the years."
 msgstr ""
-"Upplev hur roligt det är på WebCoast genom dessa underbara bilder som "
-"deltagare tagit under åren."
 
 #: page-templates/template-program.php:24 single-aterblick.php:160
 msgid "Program"
-msgstr "Program"
+msgstr ""
 
 #: page-templates/template-program.php:25
 msgid ""
@@ -516,31 +489,27 @@ msgid ""
 "free to choose what to participate in yoruself. Below, you can get a more "
 "detailed insight into the program of this years WebCoast."
 msgstr ""
-"Din biljett gäller för hela helgen och vi hoppas att du har möjlighet att "
-"delta i alla aktiviteter och måltider. Men det är så klart valfritt vad du "
-"deltar i. Här nedan kan du få en mer detaljerad blick över hur hållpunkterna "
-"på WebCoast ser ut."
 
 #: page-templates/template-program.php:30
 #: page-templates/template-videos.php:31
 msgid "Filter"
-msgstr "Filtrera"
+msgstr ""
 
 #: page-templates/template-program.php:31
 msgid "Drill down further into the program."
-msgstr "Leta djupare i programmet."
+msgstr ""
 
 #: page-templates/template-program.php:42
 msgid "Day"
-msgstr "Dag"
+msgstr ""
 
 #: page-templates/template-program.php:66
 msgid "Room"
-msgstr "Rum"
+msgstr ""
 
 #: page-templates/template-program.php:69
 msgid "All Rooms"
-msgstr "Alla rum"
+msgstr ""
 
 #: page-templates/template-program.php:141
 msgid ""
@@ -548,12 +517,10 @@ msgid ""
 "Please also always keep yourself up to date with the program as sessions "
 "tend to shift."
 msgstr ""
-"Vi reserverar oss för att eventuella ändringar i programmet kan uppkomma när "
-"som helst."
 
 #: page-templates/template-videos.php:23
 msgid "Videos from WebCoast"
-msgstr "Videos från WebCoast"
+msgstr ""
 
 #: page-templates/template-videos.php:24 single-aterblick.php:130
 msgid ""
@@ -561,177 +528,129 @@ msgid ""
 "the sessions are recorded and made available here below for your viewing "
 "pleasure."
 msgstr ""
-"Ingen har tid att gå på hela WebCoast, tyvärr. Lyckligtvis spelas många av "
-"sessionerna in och finns tillgängliga nedan för att du skall kunna titta på "
-"dem nu i efterhand och uppleva lite mer av WebCoast."
 
 #: page-templates/template-videos.php:32
 msgid "Drill down further into the videos."
-msgstr "Leta djupare bland videorna."
+msgstr ""
 
 #: page-templates/template-videos.php:44
 msgid "Year"
-msgstr "År"
+msgstr ""
 
 #: page-templates/template-videos.php:70
 msgid "Subject"
-msgstr "Ämne"
+msgstr ""
 
 #: search.php:26
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Sökresultat för: %s"
+msgstr ""
 
 #: search.php:58
 msgid ""
 "No search results could be found for your query. Please try again with "
 "another query."
 msgstr ""
-"Inga sökresultat kunde hittas för din fråga. Vänligen försök igen med en "
-"annan fråga."
 
 #: searchform.php:19
 msgid "Search"
-msgstr "Sök"
+msgstr ""
 
 #: single-aterblick.php:13
 #, php-format
 msgid "Retrospect: WebCoast %s"
-msgstr "Återblick: WebCoast %s"
+msgstr ""
 
 #: single-aterblick.php:27
 msgid "WebCoast Retrospect"
-msgstr "WebCoast Återblick"
+msgstr ""
 
 #: single-aterblick.php:45
 msgid "Sponsors and Partners"
-msgstr "Sponsorer och partners"
+msgstr ""
 
 #: single-aterblick.php:129
 msgid "Recorded Sessions"
-msgstr "Inspelade sessioner"
+msgstr ""
 
 #: single-aterblick.php:149
 msgid "Links and more"
-msgstr "Länkar och annan information"
+msgstr ""
 
 #: single-aterblick.php:175
 msgid "15 mars, 2013"
-msgstr "15 mars, 2013"
+msgstr ""
 
 #: single-aterblick.php:179
 msgid "16 mars, 2013"
-msgstr "16 mars, 2013"
+msgstr ""
 
 #: single-aterblick.php:183
 msgid "17 mars, 2013"
-msgstr "17 mars, 2013"
+msgstr ""
 
 #: single-program.php:50
 msgid "sv_SE"
-msgstr "sv_SE"
+msgstr ""
 
 #: single-program.php:57
 msgid "Day?"
-msgstr "Dag?"
+msgstr ""
 
 #: single-program.php:71
 msgid "When?"
-msgstr "När?"
+msgstr ""
 
 #: single-program.php:78
 msgid "Where?"
-msgstr "Var?"
+msgstr ""
 
 #: single-program.php:85
 msgid "Who?"
-msgstr "Vem?"
+msgstr ""
 
 #: single-program.php:105
 msgid "What?"
-msgstr "Vad?"
+msgstr ""
 
 #: single-program.php:115
 msgctxt "slug of schedule archive page"
 msgid "/program/"
-msgstr "/program/"
+msgstr ""
 
 #: single-program.php:115
 msgid "&laquo; To the schedule"
-msgstr "&laquo; Till programmet"
+msgstr ""
 
 #: single-program.php:136 single-video.php:39
 msgid "Speaker:"
-msgstr "Talare:"
+msgstr ""
 
 #: single-program.php:140 single-video.php:43
 msgid "Subject:"
-msgstr "Ämne:"
+msgstr ""
 
 #: single-program.php:143 single-video.php:46
 msgid "Year:"
-msgstr "År:"
+msgstr ""
 
 #: single-program.php:164 single-video.php:67 taxonomy-videoamne.php:72
 msgctxt "session video recording CPT archive slug"
 msgid "/videos/"
-msgstr "/videos/"
+msgstr ""
 
 #: single-program.php:164
 msgid "To the video archive"
-msgstr "Till videoarkivet"
+msgstr ""
 
 #: single-video.php:25
 msgid "From WebCoast:"
-msgstr "Från WebCoast:"
+msgstr ""
 
 #: single-video.php:67 taxonomy-videoamne.php:72
 msgid "&laquo; Back to the video archives"
-msgstr "&laquo; Tillbaka till videoarkivet"
+msgstr ""
 
 #: yarpp-template-videos.php:8
 msgid "Other interesting sessions"
-msgstr "Andra sessioner som kan vara intressanta"
-
-#~ msgid "Till videoarkivet &raquo;"
-#~ msgstr "Till videoarkivet &raquo;"
-
-#~ msgid "From the XLD Studios Blog"
-#~ msgstr "Från XLD Studios-bloggen"
-
-#~ msgid "http://www.xldstudios.com/feed"
-#~ msgstr "http://www.xldstudios.se/feed/"
-
-#~ msgid "The Latest from XLD Studios"
-#~ msgstr "Senaste nytt från XLD Studios"
-
-#~ msgid "Thanks for this year. See you again next year!"
-#~ msgstr "Tack för detta år. Ses igen nästa år!"
-
-#~ msgctxt "slug for videos archive"
-#~ msgid "/videos/"
-#~ msgstr "/videos/"
-
-#~ msgid "See the recorded sessions &raquo;"
-#~ msgstr "Se alla inspelade sessioner &raquo;"
-
-#~ msgid "Category Archives: %s"
-#~ msgstr "Kategoriarkiv: %s"
-
-#~ msgid "Tag Archives: %s"
-#~ msgstr "Taggarkiv: %s"
-
-#~ msgid "The Conference"
-#~ msgstr "Konferensen"
-
-#~ msgid "About WebCoast"
-#~ msgstr "Om WebCoast"
-
-#~ msgid "Schedule"
-#~ msgstr "Program"
-
-#~ msgid "Travel"
-#~ msgstr "Boende och Resa"
-
-#~ msgid "Attendees"
-#~ msgstr "Deltagare"
+msgstr ""

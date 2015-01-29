@@ -20,7 +20,7 @@ get_header(); ?>
 			<h1 class="page-title"><?php _e( 'Retrospects', 'webcoast' ); ?></h1>
 
 			<div class="page-body">
-				<p class="intro"><?php _e( 'Now we are doing WebCoast for the fourth time, even better!', 'webcoast' ); ?></p>
+				<p class="intro"><?php _e( 'Now we are doing WebCoast for the fifth time, even better!', 'webcoast' ); ?></p>
 				<p><?php _e( 'Be inspired what we have done on the past WebCoast\'s. The results of the trip that started with an idea that became a tweet, that became a group of people who made the unconference WebCoast, a meeting place where hundreds of people meet to talk about communication ont he internet. For both developers and users, independent of their area.', 'webcoast' ); ?></p>
 				<p><?php _e( 'When we look back at the last years it is easy to start reminiscing over the highlights, such as when the participants started to fill the lobby at Lindholmen to finally greet eachother over a prawn sandwhich, the energy in front of the grid which is the center of the unconference, the difficulty of choosing between the many excellent sessions, when participants find new friends to hold a session with or the open atmosphere that makes us take the conversations to unknown heights, or depths.', 'webcoast' ); ?></p>
 				<p><?php _e( 'The buzz when several hundred people are intensively talking to eachother.', 'webcoast' ); ?></p>
@@ -63,7 +63,7 @@ get_header(); ?>
 				<?php endif; wp_reset_postdata(); ?>
 			</div>
 
-			<p style="margin-top: 2rem;"><a href="<?php echo home_url( _x( '/videos/', 'video archive slug', 'webcoast' ) ); ?>" class="button expand"><?php _e( 'Till videoarkivet &raquo;', 'webcoast' ); ?></a></p>
+			<p style="margin-top: 2rem;"><a href="<?php echo home_url( _x( '/videos/', 'video archive slug', 'webcoast' ) ); ?>" class="button expand"><?php _e( 'To the video archive &raquo;', 'webcoast' ); ?></a></p>
 
 		</div>
 
