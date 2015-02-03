@@ -61,12 +61,12 @@ foreach ( $days as $day ) :
 		while ( $json_program_query->have_posts() ) : $json_program_query->the_post();
 
 			// Get custom fields
-			$date = get_post_meta( $post->ID, 'program_date', true );
-			$summary = get_post_meta( $post->ID, 'program_summary', true );
-			$start_time = get_post_meta( $post->ID, 'program_starttime', true );
-			$end_time = get_post_meta( $post->ID, 'program_endtime', true );
-			$video_thumbnail = get_post_meta( $post->ID, 'video_thumbnail', true );
-			$video_embed = get_post_meta( $post->ID, 'video_embed', true );
+			$date = get_post_meta( get_the_ID(), 'program_date', true );
+			$summary = get_post_meta( get_the_ID(), 'program_summary', true );
+			$start_time = get_post_meta( get_the_ID(), 'program_starttime', true );
+			$end_time = get_post_meta( get_the_ID(), 'program_endtime', true );
+			$video_thumbnail = get_post_meta( get_the_ID(), 'video_thumbnail', true );
+			$video_embed = get_post_meta( get_the_ID(), 'video_embed', true );
 
 			$program_date_object = new DateTime( $date );
 
