@@ -143,6 +143,18 @@
 			</div>
 			<?php endif; wp_reset_postdata(); ?>
 
+			<?php if ( get_field( 'aterblick_workshops' ) ) : ?>
+			<div class="aterblick-workshops page-section">
+				<div class="row">
+					<div class="small-24 columns">
+						<h2><?php _e('Workshops', 'webcoast'); ?></h2>
+
+						<?php the_field('aterblick_workshops'); ?>
+					</div>
+				</div>
+			</div>
+			<?php endif; ?>
+
 			<div class="aterblick-lankarmm light-gray-bg page-section">
 				<div class="row">
 					<div class="small-24 columns">

@@ -60,6 +60,16 @@ if(function_exists("register_field_group"))
 				'library' => 'all',
 			),
 			array (
+				'key' => 'field_509d6896a5710',
+				'label' => 'Workshops',
+				'name' => 'aterblick_workshops',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+				'the_content' => 'yes',
+			),
+			array (
 				'key' => 'field_509d6896a2149',
 				'label' => 'Länkar m.m',
 				'name' => 'aterblick_lankarmm',
