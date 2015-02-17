@@ -35,7 +35,6 @@
 
 			$sponsor_types = webcoast_get_transient_terms( 'webcoast_sponsor_types', 'sponsortyp', array(
 				'orderby' => 'id',
-				'exclude' => array( 88, 69 ),
 			), WEEK_IN_SECONDS * 4 );
 
 			if ( ! empty ( $sponsor_types ) ) : ?>
@@ -64,15 +63,18 @@
 								),
 							);
 
-							$sponsor_query = webcoast_get_transient_query( 'webcoast_retrospect_' . $display_year . '_sponsor_' . $sponsor->slug . '_query', $sponsor_query_args, WEEK_IN_SECONDS * 4 );
+							$sponsor_query = new WP_Query( $sponsor_query_args );
 
 							$text_link_terms = array( 'bronze', 'media-partner' );
 
 						if ( $sponsor_query->have_posts() ) : ?>
+
 						<article class="sponsor-row">
+
 							<div class="sponsor-title large-4 small-24 columns">
 								<?php echo $sponsor->name; ?>
 							</div>
+
 							<div class="<?php if ( ! in_array( $sponsor->slug, $text_link_terms ) ) { echo 'sponsor-logos'; } ?> large-19 small-24 columns">
 								<ul class="<?php if ( ! in_array( $sponsor->slug, $text_link_terms ) ) { echo 'inline-list'; } else { echo 'no-bullet'; } ?>">
 									<?php while ( $sponsor_query->have_posts() ) : $sponsor_query->the_post(); ?>
