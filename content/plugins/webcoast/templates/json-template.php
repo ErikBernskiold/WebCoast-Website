@@ -102,16 +102,30 @@ foreach ( $days as $day ) :
 			if ( $rooms ) {
 				foreach ( $rooms as $room ) {
 					$rooms_array = array(
-						'room_id' 		=> $room->term_id,
-						'room_slug'    => $room->slug,
-						'room_name' 	=> $room->name,
+						'room_id'              => $room->term_id,
+						'room_slug'            => $room->slug,
+						'room_name'            => $room->name,
+						'room_sponsored_names' => array(),
+						'room_size'			  	  => get_field( 'room_size', $room ),
 					);
+
+					// Add Room Sponsored Names
+					if ( get_field( 'room_sponsored_names', $room ) ) {
+
+						while ( the_repeater_field( 'room_sponsored_names', $room ) ) {
+
+							$rooms_array['room_sponsored_names'][]['year'] = get_sub_field( 'room_sponsored_names_year' );
+							$rooms_array['room_sponsored_names'][]['name'] = get_sub_field( 'room_sponsored_names_name' );
+
+						}
+					}
 				}
 			} else {
 				$rooms_array = array(
-					'room_id'		   => '',
-					'room_slug'			=> '',
-					'room_name'			=> '',
+					'room_id'              => '',
+					'room_slug'            => '',
+					'room_name'            => '',
+					'room_sponsored_names' => array(),
 				);
 			}
 

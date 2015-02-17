@@ -1,0 +1,92 @@
+{
+    "key": "group_54d755542e8df",
+    "title": "Room Meta",
+    "fields": [
+        {
+            "key": "field_54d755614e6cb",
+            "label": "Sponsored Names",
+            "name": "room_sponsored_names",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "For every year we have a different name of the room depending on the sponsor. Whereas the name of the term itself reflects the venue's original name, below you can enter the name for every year.",
+            "required": 0,
+            "conditional_logic": 0,
+            "min": 1,
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Year",
+            "sub_fields": [
+                {
+                    "key": "field_54d755d24e6cd",
+                    "label": "\u00c5r",
+                    "name": "room_sponsored_names_year",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "column_width": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54d755b64e6cc",
+                    "label": "Namn",
+                    "name": "room_sponsored_names_name",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "column_width": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54d7561f640d9",
+            "label": "Room Size",
+            "name": "room_size",
+            "prefix": "",
+            "type": "number",
+            "instructions": "How many people does this room fit?",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "platser",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "webcoast_room"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ""
+}
