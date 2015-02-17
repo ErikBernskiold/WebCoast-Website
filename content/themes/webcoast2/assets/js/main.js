@@ -82,11 +82,11 @@ jQuery(document).ready(function($){
 		var years    = new Array();
 		var subjects = new Array();
 
-		$('#webcoast_year option:selected').each(function() {
+		$('#year-filter .trigger-checkbox:checked').each(function() {
 			years.push( $(this).data('year') );
 		});
 
-		$(".trigger-checkbox:checked").each(function() {
+		$("#category-filter .trigger-checkbox:checked").each(function() {
 		  subjects.push( $(this).data('subject') );
 		});
 

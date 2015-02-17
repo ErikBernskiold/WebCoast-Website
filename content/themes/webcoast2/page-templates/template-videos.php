@@ -40,7 +40,7 @@ get_header(); ?>
 
 					if ( $years ) : ?>
 
-						<div class="small-24 medium-14 large-4 columns program-filter-item">
+						<div class="small-24 medium-14 large-4 columns program-filter-item" id="year-filter">
 							<label class="program-filter-heading" for="webcoast_year"><?php _e( 'Year', 'webcoast' ); ?></label>
 
 							<div class="inline-checkboxes-group">
@@ -66,7 +66,7 @@ get_header(); ?>
 
 					if ( $subjects ) : ?>
 
-						<div class="small-24 medium-24 large-15 columns program-filter-item">
+						<div class="small-24 medium-24 large-15 columns program-filter-item" id="category-filter">
 							<label class="program-filter-heading"><?php _e( 'Subject', 'webcoast' ); ?></label>
 							<div class="inline-checkboxes-group">
 
