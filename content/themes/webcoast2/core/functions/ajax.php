@@ -27,7 +27,7 @@ function webcoast_program_filter_callback() {
 	$rooms          = $_POST['rooms'];
 	$dates          = $_POST['dates'];
 	//$current_year = get_field( 'program_display_year', 'option' );
-	$current_year   = 2014;
+	$current_year   = 2015;
 
 	// Get the conference days and loop through them,
 	// creating a query on the items that day.
