@@ -76,7 +76,7 @@ class WebCoast {
 	function functions() {
 
 		// Load ACF Fields
-		require_once( WC_PLUGIN_DIR . '/inc/advanced-custom-fields.php' );
+		// require_once( WC_PLUGIN_DIR . '/inc/advanced-custom-fields.php' );
 
 	}
 

@@ -1,0 +1,272 @@
+{
+    "key": "group_acf_framsida",
+    "title": "Framsida",
+    "fields": [
+        {
+            "key": "field_50826d7691776",
+            "label": "Konferenstitel",
+            "name": "home_title",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Ange titeln p\u00e5 konferensen med \u00e5r.\n\tex. WebCoast 2013",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_50826d7691f4d",
+            "label": "Konferensdatum",
+            "name": "home_dates",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Vilka datum \u00e4ger konferensen rum?\n\tex. 16-18 mars",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_50826df88310e",
+            "label": "Biljettf\u00f6rs\u00e4ljning ig\u00e5ng?",
+            "name": "home_forsaljning",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Markera om biljettf\u00f6rs\u00e4ljningen \u00e4r ig\u00e5ng eller inte.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Markera om biljettf\u00f6rs\u00e4ljningen \u00e4r ig\u00e5ng eller inte.",
+            "default_value": 0
+        },
+        {
+            "key": "field_1",
+            "label": "Sluts\u00e5lt?",
+            "name": "home_slutsalt",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "\u00c4r biljetterna slut?",
+            "default_value": 0
+        },
+        {
+            "key": "field_50826df8838fc",
+            "label": "L\u00e4nk till biljetter",
+            "name": "home_ticket_link",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Ange l\u00e4nken dit knappen f\u00f6r biljettk\u00f6p skall ta bes\u00f6kare.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_509b65ddb0192",
+            "label": "Allm\u00e4n Text",
+            "name": "home_box_text",
+            "prefix": "",
+            "type": "text",
+            "instructions": "N\u00e4r inte biljettf\u00f6rs\u00e4ljningen \u00e4r ig\u00e5ng visas denna text \u00f6ver en knapp.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_509b65ddb0193",
+            "label": "Allm\u00e4n Knapp: Text",
+            "name": "home_box_button_title",
+            "prefix": "",
+            "type": "text",
+            "instructions": "N\u00e4r inte biljettf\u00f6rs\u00e4ljningen \u00e4r ig\u00e5ng visas denna text p\u00e5 knappen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_509b65ddb0194",
+            "label": "Allm\u00e4n Knapp: L\u00e4nk",
+            "name": "home_box_button_link",
+            "prefix": "",
+            "type": "text",
+            "instructions": "N\u00e4r inte biljettf\u00f6rs\u00e4ljningen \u00e4r ig\u00e5ng l\u00e4nkar knappen hit.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_50826ebebf259",
+            "label": "Introduktionstext",
+            "name": "home_introtext",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Skriv en kort text om WebCoast h\u00e4r.\n\t(f\u00e4ltet tar inte HTML-kod)",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": ""
+        },
+        {
+            "key": "field_50826ebebfa34",
+            "label": "Embedkod f\u00f6r film",
+            "name": "home_movie_code",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Fyll i embedkoden f\u00f6r den video som skall visas p\u00e5 framsidan.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": ""
+        },
+        {
+            "key": "field_509b65ddb0187",
+            "label": "Social Text",
+            "name": "home_socialtext",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Text som uppmanar till social kontakt. Visas l\u00e4ngst ner p\u00e5 startsidan bredvid nyhetsbrevet.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/template-frontpage.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image"
+    ],
+    "modified": 1425110588
+}

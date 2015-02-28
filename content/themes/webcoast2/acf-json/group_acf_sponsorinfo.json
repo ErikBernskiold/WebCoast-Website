@@ -1,0 +1,63 @@
+{
+    "key": "group_acf_sponsorinfo",
+    "title": "Sponsorinfo",
+    "fields": [
+        {
+            "key": "field_50826c6079920",
+            "label": "L\u00e4nk",
+            "name": "sponsor_link",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Fyll i l\u00e4nken till sponsorns hemsida.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "formatting": "none",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_50957ba2a50d3",
+            "label": "Framsidebild",
+            "name": "sponsor_fpimage",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Ladda upp en bild f\u00f6r sponsorn p\u00e5 framsidan.\n\t200x200px p\u00e5 vit bakgrund, centrerad logo.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "url"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sponsor"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1425110597
+}

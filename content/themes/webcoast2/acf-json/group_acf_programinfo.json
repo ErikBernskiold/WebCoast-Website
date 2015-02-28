@@ -1,0 +1,313 @@
+{
+    "key": "group_acf_programinfo",
+    "title": "Programinfo",
+    "fields": [
+        {
+            "key": "field_5184c8c8e588d",
+            "label": "Programinfo",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_50ba170d7e088",
+            "label": "Sammanfattning",
+            "name": "program_summary",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Sammanfatta denna programh\u00e4ndelse i en kort paragraf.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": ""
+        },
+        {
+            "key": "field_50827cfbcb992",
+            "label": "Rum",
+            "name": "program_location",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Var \u00e4ger h\u00e4ndelsen rum?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "formatting": "none",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_50827cfbcc15c",
+            "label": "Datum",
+            "name": "program_date",
+            "prefix": "",
+            "type": "date_picker",
+            "instructions": "N\u00e4r \u00e4ger h\u00e4ndelsen rum?",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "first_day": 1,
+            "return_format": "Y-m-d",
+            "display_format": "Y-m-d"
+        },
+        {
+            "key": "field_50827cfbcc935",
+            "label": "Starttid",
+            "name": "program_starttime",
+            "prefix": "",
+            "type": "text",
+            "instructions": "N\u00e4r b\u00f6rjar h\u00e4ndelsen.\n\tex. 09:00",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "formatting": "none",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_50827cfbcd106",
+            "label": "Sluttid",
+            "name": "program_endtime",
+            "prefix": "",
+            "type": "text",
+            "instructions": "N\u00e4r slutar h\u00e4ndelsen.\n\tex. 10:00",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "formatting": "none",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5184de133e369",
+            "label": "Talare",
+            "name": "program_talare",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": 1,
+            "row_limit": "",
+            "layout": "row",
+            "button_label": "L\u00e4gg till talare",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_5184de273e36a",
+                    "label": "Namn",
+                    "name": "program_talare_namn",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5184de343e36b",
+                    "label": "Twitternamn",
+                    "name": "program_talare_twitter",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Fyll i talarens twitternamn, utan @.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "@",
+                    "append": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5184c8dae588e",
+            "label": "Video",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_5184c9e16a1ad",
+            "label": "Finns video?",
+            "name": "video_exists",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Finns videoinneh\u00e5ll?",
+            "default_value": 0
+        },
+        {
+            "key": "field_5184c90be588f",
+            "label": "Tumnagel",
+            "name": "video_thumbnail",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Ladda upp en tumnagel f\u00f6r videon. Tumnageln skall vara 300x169px.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5184c9e16a1ad",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "array"
+        },
+        {
+            "key": "field_5184c935e5890",
+            "label": "Embedkod",
+            "name": "video_embed",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Ange embedkoden fr\u00e5n videotj\u00e4nsten. Spelaren skall vara 640px bred.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5184c9e16a1ad",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "program"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "revisions",
+        "author",
+        "format",
+        "featured_image"
+    ],
+    "modified": 1425110833
+}

@@ -1,0 +1,149 @@
+{
+    "key": "group_acf_%c3%a5terblickar",
+    "title": "\u00c5terblickar",
+    "fields": [
+        {
+            "key": "field_509d682ea2147",
+            "label": "\u00c5r",
+            "name": "aterblick_ar",
+            "prefix": "",
+            "type": "number",
+            "instructions": "Vilket \u00e5r \u00e4r denna \u00e5terblick f\u00f6r.\n\tex. 2012",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_509d6d020c1d4",
+            "label": "Introduktion",
+            "name": "aterblick_introduktion",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "Skriv en kort paragraf introduktion till \u00e5ret och \u00e5terblicken.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": ""
+        },
+        {
+            "key": "field_509d685fa2148",
+            "label": "Beskrivning",
+            "name": "aterblick_beskrivning",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "Fyll i en kort beskrivning om \u00e5ret i fr\u00e5ga.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "the_content": "yes",
+            "tabs": "all"
+        },
+        {
+            "key": "field_509d70c79a80e",
+            "label": "Huvudbild",
+            "name": "aterblick_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Ladda upp en huvudbild f\u00f6r \u00e5terblicken.\n\tStorlek: 480px bred. Anpassa h\u00f6jd efter inneh\u00e5ll.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "url"
+        },
+        {
+            "key": "field_509d6896a5710",
+            "label": "Workshops",
+            "name": "aterblick_workshops",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "the_content": "yes",
+            "tabs": "all"
+        },
+        {
+            "key": "field_509d6896a2149",
+            "label": "L\u00e4nkar m.m",
+            "name": "aterblick_lankarmm",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 1,
+            "the_content": "yes",
+            "tabs": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "aterblick"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt"
+    ],
+    "modified": 1425110584
+}
