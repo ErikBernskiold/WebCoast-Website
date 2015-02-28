@@ -68,6 +68,11 @@ class WebCoast {
 		// Add the json event template
 		add_action( 'template_redirect', array( $this, 'json_template' ) );
 
+		// Add Custom Columns to Program Post Type
+		add_filter( 'manage_program_posts_columns', array( $this, 'custom_program_admin_columns' ), 10 );
+		add_action( 'manage_program_posts_custom_column', array( $this, 'custom_program_admin_columns_content' ), 10, 2 );
+
+
 	}
 
 	/**
@@ -129,48 +134,60 @@ class WebCoast {
 
 	}
 
-		/**
-		 * Register Custom Query Vars
-		 */
-		public function register_query_vars( $vars ) {
-			$vars[] = 'json';
+	/**
+	 * Register Custom Query Vars
+	 */
+	public function register_query_vars( $vars ) {
+		$vars[] = 'json';
 
-			return $vars;
-		}
+		return $vars;
+	}
 
-		/**
-		 * Adds /json endpoint everywhere
-		 *
-		 * Used to display a custom template (see below)
-		 * for the program JSON
-		 */
-		public function add_endpoints() {
+	/**
+	 * Adds /json endpoint everywhere
+	 *
+	 * Used to display a custom template (see below)
+	 * for the program JSON
+	 */
+	public function add_endpoints() {
 
-			add_rewrite_endpoint( 'json', EP_ALL );
+		add_rewrite_endpoint( 'json', EP_ALL );
 
-		}
+	}
 
-		/**
-		 * Load JSON Template on Endpoint Call
-		 *
-		 * When the add endpoint is called, we want to display a
-		 * custom template, which is the program JSON feed.
-		 */
-		public function json_template() {
+	/**
+	 * Load JSON Template on Endpoint Call
+	 *
+	 * When the add endpoint is called, we want to display a
+	 * custom template, which is the program JSON feed.
+	 */
+	public function json_template() {
 
-			global $wp_query;
+		global $wp_query;
 
-			// If this request doesn't contain the json endpoint, quit here.
-			if ( ! isset( $wp_query->query_vars['json'] ) )
-				return;
+		// If this request doesn't contain the json endpoint, quit here.
+		if ( ! isset( $wp_query->query_vars['json'] ) )
+			return;
 
-			if ( ! is_page( 'program' ) )
-				return;
+		if ( ! is_page( 'program' ) )
+			return;
 
-			include WC_PLUGIN_DIR . '/templates/json-template.php';
-			exit;
+		include WC_PLUGIN_DIR . '/templates/json-template.php';
+		exit;
 
-		}
+	}
+
+	// ADD TWO NEW COLUMNS
+	public function custom_program_admin_columns($defaults) {
+	    $defaults['program_year']  = __( 'Year' );
+	    return $defaults;
+	}
+
+	public function custom_program_admin_columns_content($column_name, $post_ID) {
+	   if ($column_name == 'program_year') {
+	   	the_terms( $post_ID, 'year', '', ', ', '' );
+	   }
+	}
 
 }
 
