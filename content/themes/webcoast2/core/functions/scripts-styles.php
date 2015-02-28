@@ -100,3 +100,42 @@ function webcoast_favicon() {
 
 add_action('wp_head', 'webcoast_favicon'); // Adds the favicon to frontend
 add_action('admin_head', 'webcoast_favicon'); // Adds the favicon to backend
+
+if ( ! function_exists( 'webcoast_remarketing' ) ) :
+
+	/**
+	 * WebCoast Remarketing Tags
+	 */
+	function webcoast_remarketing() {
+
+		ob_start(); ?>
+
+			<!-- Googles kod för remarketing-taggen -->
+			<!--------------------------------------------------
+			Remarketing-taggar får inte vara kopplade till personligt identifierande information eller placeras på sidor relaterade till känsliga kategorier. Läs mer information och anvisningar om hur du ställer in taggen på: http://google.com/ads/remarketingsetup
+			--------------------------------------------------->
+			<script type="text/javascript">
+			/* <![CDATA[ */
+			var google_conversion_id = 954419884;
+			var google_custom_params = window.google_tag_params;
+			var google_remarketing_only = true;
+			/* ]]> */
+			</script>
+			<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+			</script>
+			<noscript>
+			<div style="display:inline;">
+			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/954419884/?value=0&amp;guid=ON&amp;script=0"/>
+			</div>
+			</noscript>
+
+		<?php
+		$output = ob_get_clean();
+
+		echo $output;
+
+	}
+
+	add_action( 'wp_footer', 'webcoast_remarketing' );
+
+endif;
