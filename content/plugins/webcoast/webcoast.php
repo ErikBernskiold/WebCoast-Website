@@ -107,6 +107,9 @@ class WebCoast {
 		// Load "Inspiration" post type
 		require_once( WC_POST_TYPES . '/inspiration.php' );
 
+		// Load "Notiser" post type
+		require_once( WC_POST_TYPES . '/notiser.php' );
+
 	}
 
 	/**
