@@ -14,12 +14,12 @@ add_action( 'init', 'register_cpt_sponsor' );
 
 /**
  * Sets up Custom Post Type Options for "Sponsor"
- * 
+ *
  * @return array
  */
 function register_cpt_sponsor() {
 
-    $labels = array( 
+    $labels = array(
         'name' => _x( 'Sponsorer', 'webcoast' ),
         'singular_name' => _x( 'Sponsor', 'webcoast' ),
         'add_new' => _x( 'Lägg till', 'webcoast' ),
@@ -34,17 +34,17 @@ function register_cpt_sponsor() {
         'menu_name' => _x( 'Sponsorer', 'webcoast' ),
     );
 
-    $args = array( 
+    $args = array(
         'labels' => $labels,
         'hierarchical' => false,
-        
+
         'supports' => array( 'title', 'editor', 'thumbnail' ),
-        
+
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 33,
-        'menu_icon' => WC_IMAGES . '/cpt-sponsor-icon.png',
+        'menu_icon' => 'dashicons-heart',
         'show_in_nav_menus' => false,
         'publicly_queryable' => true,
         'exclude_from_search' => true,

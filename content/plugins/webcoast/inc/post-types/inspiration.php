@@ -28,7 +28,7 @@ function register_cpt_inspiration() {
         'show_ui' => true,
         'show_in_menu' => true,
 
-        'menu_icon' => get_template_directory_uri() . '/img/cpt-aterblick-icon.png',
+        'menu_icon' => 'dashicons-lightbulb',
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,

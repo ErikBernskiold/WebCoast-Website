@@ -14,12 +14,12 @@ add_action( 'init', 'register_cpt_program' );
 
 /**
  * Sets up Custom Post Type Options for "Program"
- * 
+ *
  * @return array
  */
 function register_cpt_program() {
 
-    $labels = array( 
+    $labels = array(
         'name' => _x( 'Sessioner', 'webcoast' ),
         'singular_name' => _x( 'Session', 'webcoast' ),
         'add_new' => _x( 'Lägg till', 'webcoast' ),
@@ -34,17 +34,17 @@ function register_cpt_program() {
         'menu_name' => _x( 'Session', 'webcoast' ),
     );
 
-    $args = array( 
+    $args = array(
         'labels' => $labels,
         'hierarchical' => false,
-        
+
         'supports' => array( 'title', 'editor' ),
-        
+
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 33,
-        'menu_icon' => WC_IMAGES . '/cpt-program-icon.png',
+        'menu_icon' => 'dashicons-list-view',
         'show_in_nav_menus' => false,
         'publicly_queryable' => true,
         'exclude_from_search' => true,

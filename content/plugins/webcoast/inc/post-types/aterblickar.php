@@ -28,7 +28,7 @@ function register_cpt_aterblick() {
         'show_ui' => true,
         'show_in_menu' => true,
 
-        'menu_icon' => get_template_directory_uri() . '/img/cpt-aterblick-icon.png',
+        'menu_icon' => 'dashicons-visibility',
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,
