@@ -120,7 +120,8 @@ get_header(); ?>
 							),
 						);
 
-						$program_query = webcoast_get_transient_query( 'webcoast_program_unfiltered_query_' . $day->slug, $program_query_args, 60*5 );
+						// $program_query = webcoast_get_transient_query( 'webcoast_program_unfiltered_query_' . $day->slug, $program_query_args, 60*5 );
+						$program_query = new WP_Query( $program_query_args );
 					?>
 
 					<?php if ( $program_query->have_posts() ) : ?>

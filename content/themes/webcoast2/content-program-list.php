@@ -25,19 +25,31 @@
 			<div class="program-table-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 			<div class="program-table-item-excerpt">
 				<span class="program-table-item-speaker">
-					<?php if(get_field('program_talare')) : $speaker_counter = 1; while(the_repeater_field('program_talare')) : ?>
-						<?php if( $speaker_counter > 1 ) : ?>, <?php endif; ?>
 
-						<?php if ( get_sub_field( 'program_talare_url' ) ) : ?>
-							<a href="<?php the_sub_field('program_talare_url'); ?>">
-								<?php the_sub_field('program_talare_namn'); ?>
-							</a>
-						<?php elseif ( get_sub_field( 'program_talare_twitter' ) ) : ?>
-							<a href="https://twitter.com/<?php echo str_replace( '@', '', get_sub_field( 'program_talare_twitter' ) ); ?>">
-								<?php the_sub_field('program_talare_namn'); ?>
-							</a>
-						<?php endif; ?>
-					<?php $speaker_counter++; endwhile; endif; ?>
+					<?php if ( get_field( 'program_talare' ) ) : $speaker_counter = 1; ?>
+
+						<?php while ( the_repeater_field( 'program_talare' ) ) : ?>
+
+							<?php if( $speaker_counter >= 2 ) : ?>, <?php endif; ?>
+
+							<?php if ( get_sub_field( 'program_talare_url' ) ) : ?>
+								<a href="<?php the_sub_field('program_talare_url'); ?>">
+									<?php the_sub_field('program_talare_namn'); ?>
+								</a>
+							<?php elseif ( get_sub_field( 'program_talare_twitter' ) ) : ?>
+								<a href="https://twitter.com/<?php echo str_replace( '@', '', get_sub_field( 'program_talare_twitter' ) ); ?>">
+									<?php the_sub_field('program_talare_namn'); ?>
+								</a>
+							<?php else : ?>
+								<?php the_sub_field( 'program_talare_namn' ); ?>
+							<?php endif; ?>
+
+							<?php $speaker_counter++; ?>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
 				</span> - <?php echo webcoast_get_excerpt( 25 ); ?></div>
 		</li>
 		<li class="program-table-item-location small-24 medium-5 large-5 columns">
