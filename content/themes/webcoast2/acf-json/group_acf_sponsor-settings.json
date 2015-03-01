@@ -1,6 +1,6 @@
 {
     "key": "group_acf_sponsor-settings",
-    "title": "Sponsor Settings",
+    "title": "General Settings",
     "fields": [
         {
             "key": "field_527d5dd6dcb45",
@@ -25,6 +25,30 @@
             "step": 1,
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_54f2d3d3610eb",
+            "label": "Program Display Year",
+            "name": "program_display_year",
+            "prefix": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -38,9 +62,9 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1425110595
+    "modified": 1425200105
 }

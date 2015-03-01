@@ -12,8 +12,7 @@
  **/
 
 // Get the current program year to display
-//$current_year = get_field( 'program_display_year', 'option' );
-$current_year = 2014;
+$current_year = get_field( 'program_display_year', 'option' );
 
 get_header(); ?>
 
