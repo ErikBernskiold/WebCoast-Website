@@ -12,12 +12,11 @@
  **/
 
 // Get the current program year to display
-//$current_year = get_field( 'program_display_year', 'option' );
-$current_year = 2014;
+$current_year = get_field( 'program_display_year', 'option' );
 
 if ( isset( $_GET['year'] ) ) {
 	$set_year = wp_strip_all_tags( $_GET['year'] );
-	$filter_year = $set_year;
+	$filter_year = intval( $set_year );
 } else {
 	$filter_year = $current_year;
 }
@@ -54,7 +53,8 @@ foreach ( $days as $day ) :
 		),
 	);
 
-	$json_program_query = webcoast_get_transient_query( 'webcoast_program_json_query_' . $day->slug, $json_program_query_args, DAY_IN_SECONDS );
+	// $json_program_query = webcoast_get_transient_query( 'webcoast_program_json_query_' . $day->slug, $json_program_query_args, DAY_IN_SECONDS );
+	$json_program_query = new WP_Query( $json_program_query_args );
 
 	if ( $json_program_query->have_posts() ) :
 
@@ -85,6 +85,7 @@ foreach ( $days as $day ) :
 					// Add the speakers to the array
 					$speakers_array[] = array(
 						'name' => get_sub_field( 'program_talare_namn' ),
+						'twitter' => get_sub_field( 'program_talare_twitter' ),
 						'url'  => get_sub_field( 'program_talare_url' ),
 					);
 
