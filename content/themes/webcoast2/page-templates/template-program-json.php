@@ -53,7 +53,8 @@ foreach ( $days as $day ) :
 		),
 	);
 
-	$json_program_query = webcoast_get_transient_query( 'webcoast_program_json_query_' . $day->slug, $json_program_query_args, DAY_IN_SECONDS );
+	// $json_program_query = webcoast_get_transient_query( 'webcoast_program_json_query_' . $day->slug, $json_program_query_args, DAY_IN_SECONDS );
+	$json_program_query = new WP_Query( $json_program_query_args );
 
 	if ( $json_program_query->have_posts() ) :
 
