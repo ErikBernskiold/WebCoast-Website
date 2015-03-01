@@ -99,7 +99,7 @@ class WebCoast {
 		require_once( WC_POST_TYPES . '/program.php' );
 
 		// Load "Videos" post type
-		require_once( WC_POST_TYPES . '/videos.php' );
+		// require_once( WC_POST_TYPES . '/videos.php' );
 
 		// Load "Återblickar" post type
 		require_once( WC_POST_TYPES . '/aterblickar.php' );
