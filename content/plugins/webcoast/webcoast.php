@@ -172,11 +172,17 @@ class WebCoast {
 		if ( ! isset( $wp_query->query_vars['json'] ) )
 			return;
 
-		if ( ! is_page( 'program' ) )
-			return;
+		if ( is_page( 'program' ) ) {
+			include WC_PLUGIN_DIR . '/templates/json-template.php';
+			exit;
+		}
 
-		include WC_PLUGIN_DIR . '/templates/json-template.php';
-		exit;
+		if ( is_page( 'sponsring' ) ) {
+			include WC_PLUGIN_DIR . '/templates/sponsor-json-api.php';
+			exit;
+		}
+
+		return;
 
 	}
 
