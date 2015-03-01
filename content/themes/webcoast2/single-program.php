@@ -73,10 +73,13 @@ get_header(); ?>
 								</div>
 								<?php endif; ?>
 
-								<?php if( get_field('program_location') ) : ?>
+								<?php $rooms = get_the_terms( $post->ID, 'webcoast_room' );
+								if ( $rooms ) : ?>
 								<div class="event-detail-item" id="event-location">
 									<?php _e('Where?', 'webcoast'); ?>
-									<span><?php the_field('program_location'); ?></span>
+									<span>
+										<?php foreach ( $rooms as $room ) echo $room->name; ?>
+									</span>
 								</div>
 								<?php endif; ?>
 
