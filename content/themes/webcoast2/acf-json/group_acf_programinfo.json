@@ -41,29 +41,6 @@
             "rows": ""
         },
         {
-            "key": "field_50827cfbcb992",
-            "label": "Rum",
-            "name": "program_location",
-            "prefix": "",
-            "type": "text",
-            "instructions": "Var \u00e4ger h\u00e4ndelsen rum?",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "formatting": "none",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
             "key": "field_50827cfbcc15c",
             "label": "Datum",
             "name": "program_date",
@@ -253,7 +230,14 @@
             },
             "preview_size": "thumbnail",
             "library": "all",
-            "return_format": "array"
+            "return_format": "array",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
         },
         {
             "key": "field_5184c935e5890",
@@ -309,5 +293,5 @@
         "format",
         "featured_image"
     ],
-    "modified": 1425110833
+    "modified": 1425203923
 }
