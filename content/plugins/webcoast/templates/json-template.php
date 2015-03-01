@@ -98,7 +98,7 @@ foreach ( $days as $day ) :
 			}
 
 			// Rooms
-			$rooms = get_the_terms( $post->ID, 'webcoast_room' );
+			$rooms = get_the_terms( get_the_ID(), 'webcoast_room' );
 
 			if ( $rooms ) {
 				foreach ( $rooms as $room ) {
@@ -127,6 +127,7 @@ foreach ( $days as $day ) :
 					'room_slug'            => '',
 					'room_name'            => '',
 					'room_sponsored_names' => array(),
+					'room_size'				  => '',
 				);
 			}
 
