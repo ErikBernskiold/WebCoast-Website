@@ -197,6 +197,7 @@ foreach ( $days as $day ) :
 endforeach;
 
 // Encode JSON
+header('Content-Type: application/json');
 $output = json_encode( $program_array );
 
 // If we have dev mode set in the URL,
