@@ -2,6 +2,8 @@
 /**
  * Page Template: JSON Program
  *
+ * DEPRECATED!
+ *
  * @since WebCoast 1.0
  * @author XLD Studios
  * @version 1.0
