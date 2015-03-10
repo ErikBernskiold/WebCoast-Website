@@ -9,6 +9,26 @@
  **/
 ?>
 
+	<section class="app-cta">
+		<div class="row page-section">
+		  <div class="small-24 medium-14 large-13 columns text-center app-cta-body">
+		    <h2 class="app-cta-title"><?php _e( 'Download The WebCoast App', 'webcoast' ); ?></h2>
+		    <p><?php _e( 'Download the WebCoast app and get quick and easy access to the programme. It is available for both iOS and Android in the respective app stores.', 'webcoast' ); ?></p>
+		    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" id="app-download-buttons">
+		      <li>
+		        <a href="https://itunes.apple.com/us/app/camping-key-europe/id667520035?l=en&mt=8"><img src="<?php echo THEME_IMAGES_URI; ?>/appstore-ios.png" alt="<?php _e( 'Available on the App Store', 'webcoast' ); ?>"></a>
+		      </li>
+		      <li>
+		        <a href="https://play.google.com/store/apps/details?id=com.campingkey.cke&hl=en"><img src="<?php echo THEME_IMAGES_URI; ?>/googleplay.png" alt="<?php _e( 'Get it on Google Play', 'webcoast' ); ?>"></a>
+		      </li>
+		    </ul>
+		  </div>
+		  <div class="small-24 medium-10 large-10 columns text-center">
+		    <img src="<?php echo THEME_IMAGES_URI; ?>/cke-app-preview.png" alt="<?php _e( 'WebCoast App', 'webcoast' ); ?>" class="app-cta-image">
+		  </div>
+		</div>
+	</section>
+
 	<div class="site-footer">
 		<div class="row">
 			<div class="small-24 medium-12 large-9 columns">
