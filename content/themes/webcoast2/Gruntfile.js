@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 					sourcemap: true,
 				},
 				files: {
-					'assets/css/layout.css': 'assets/scss/layout.scss'
+					'assets/css/layout.css': 'assets/sass/layout.scss'
 				}
 			}
 		},
