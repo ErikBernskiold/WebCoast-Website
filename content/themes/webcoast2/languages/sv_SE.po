@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WebCoast Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-29 10:26+0100\n"
-"PO-Revision-Date: 2015-01-29 10:28+0100\n"
+"POT-Creation-Date: 2015-03-11 10:04+0100\n"
+"PO-Revision-Date: 2015-03-11 10:33+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -97,7 +97,7 @@ msgstr "Till videoarkivet &raquo;"
 msgid "Sponsors"
 msgstr "Sponsorer"
 
-#: archive-sponsor.php:20 single-aterblick.php:46
+#: archive-sponsor.php:20 single-aterblick.php:45
 msgid ""
 "WebCoast would not be anything without our sponsors. Do you or the company "
 "that you are working on want to sponsor WebCoast? Take a look at <a href="
@@ -243,12 +243,37 @@ msgstr "Navigation"
 msgid "Main Navigation"
 msgstr "Huvudnavigation"
 
+#: footer.php:15
+msgid "Download The WebCoast App"
+msgstr "Ladda ned WebCoast-appen!"
+
 #: footer.php:16
+msgid ""
+"Download the WebCoast app and get quick and easy access to the programme. It "
+"is available for both iOS and Android in the respective app stores."
+msgstr ""
+"Ladda ner WebCoast-appen och få snabb och enkel tillgång till bland annat "
+"programmet. Du kan exempelvis spara ned ditt eget schema för helgen! Appen "
+"finns för båda iOS och Android i respektive App Store."
+
+#: footer.php:19
+msgid "Available on the App Store"
+msgstr "Tillgänglig på App Store"
+
+#: footer.php:22
+msgid "Get it on Google Play"
+msgstr "Hämta på Google Play"
+
+#: footer.php:27
+msgid "WebCoast App"
+msgstr "WebCoast Appen"
+
+#: footer.php:36
 #, php-format
 msgid "Copyright &copy; %s WebCoast"
 msgstr "Copyright &copy; %s WebCoast"
 
-#: footer.php:25
+#: footer.php:45
 msgid "Social Media"
 msgstr "Sociala nätverk"
 
@@ -505,11 +530,11 @@ msgstr ""
 "Upplev hur roligt det är på WebCoast genom dessa underbara bilder som "
 "deltagare tagit under åren."
 
-#: page-templates/template-program.php:24 single-aterblick.php:160
+#: page-templates/template-program.php:23 single-aterblick.php:174
 msgid "Program"
 msgstr "Program"
 
-#: page-templates/template-program.php:25
+#: page-templates/template-program.php:24
 msgid ""
 "Your ticket is valid for the entire weekend and we hope that you have the "
 "ability to participate in all activites and meals, however, you are fully "
@@ -521,24 +546,24 @@ msgstr ""
 "deltar i. Här nedan kan du få en mer detaljerad blick över hur hållpunkterna "
 "på WebCoast ser ut."
 
-#: page-templates/template-program.php:30
+#: page-templates/template-program.php:29
 #: page-templates/template-videos.php:31
 msgid "Filter"
 msgstr "Filtrera"
 
-#: page-templates/template-program.php:31
+#: page-templates/template-program.php:30
 msgid "Drill down further into the program."
 msgstr "Leta djupare i programmet."
 
-#: page-templates/template-program.php:42
+#: page-templates/template-program.php:41
 msgid "Day"
 msgstr "Dag"
 
-#: page-templates/template-program.php:66
+#: page-templates/template-program.php:65
 msgid "Room"
 msgstr "Rum"
 
-#: page-templates/template-program.php:69
+#: page-templates/template-program.php:68
 msgid "All Rooms"
 msgstr "Alla rum"
 
@@ -555,7 +580,7 @@ msgstr ""
 msgid "Videos from WebCoast"
 msgstr "Videos från WebCoast"
 
-#: page-templates/template-videos.php:24 single-aterblick.php:130
+#: page-templates/template-videos.php:24 single-aterblick.php:132
 msgid ""
 "Nobody has time to go to all of WebCoast, unfortunately. Luckily, many of "
 "the sessions are recorded and made available here below for your viewing "
@@ -603,27 +628,31 @@ msgstr "Återblick: WebCoast %s"
 msgid "WebCoast Retrospect"
 msgstr "WebCoast Återblick"
 
-#: single-aterblick.php:45
+#: single-aterblick.php:44
 msgid "Sponsors and Partners"
 msgstr "Sponsorer och partners"
 
-#: single-aterblick.php:129
+#: single-aterblick.php:131
 msgid "Recorded Sessions"
 msgstr "Inspelade sessioner"
 
-#: single-aterblick.php:149
+#: single-aterblick.php:152
+msgid "Workshops"
+msgstr "Workshops"
+
+#: single-aterblick.php:163
 msgid "Links and more"
 msgstr "Länkar och annan information"
 
-#: single-aterblick.php:175
+#: single-aterblick.php:189
 msgid "15 mars, 2013"
 msgstr "15 mars, 2013"
 
-#: single-aterblick.php:179
+#: single-aterblick.php:193
 msgid "16 mars, 2013"
 msgstr "16 mars, 2013"
 
-#: single-aterblick.php:183
+#: single-aterblick.php:197
 msgid "17 mars, 2013"
 msgstr "17 mars, 2013"
 
@@ -639,45 +668,45 @@ msgstr "Dag?"
 msgid "When?"
 msgstr "När?"
 
-#: single-program.php:78
+#: single-program.php:79
 msgid "Where?"
 msgstr "Var?"
 
-#: single-program.php:85
+#: single-program.php:88
 msgid "Who?"
 msgstr "Vem?"
 
-#: single-program.php:105
+#: single-program.php:120
 msgid "What?"
 msgstr "Vad?"
 
-#: single-program.php:115
+#: single-program.php:130
 msgctxt "slug of schedule archive page"
 msgid "/program/"
 msgstr "/program/"
 
-#: single-program.php:115
+#: single-program.php:130
 msgid "&laquo; To the schedule"
 msgstr "&laquo; Till programmet"
 
-#: single-program.php:136 single-video.php:39
+#: single-program.php:151 single-video.php:39
 msgid "Speaker:"
 msgstr "Talare:"
 
-#: single-program.php:140 single-video.php:43
+#: single-program.php:155 single-video.php:43
 msgid "Subject:"
 msgstr "Ämne:"
 
-#: single-program.php:143 single-video.php:46
+#: single-program.php:158 single-video.php:46
 msgid "Year:"
 msgstr "År:"
 
-#: single-program.php:164 single-video.php:67 taxonomy-videoamne.php:72
+#: single-program.php:179 single-video.php:67 taxonomy-videoamne.php:72
 msgctxt "session video recording CPT archive slug"
 msgid "/videos/"
 msgstr "/videos/"
 
-#: single-program.php:164
+#: single-program.php:179
 msgid "To the video archive"
 msgstr "Till videoarkivet"
 
