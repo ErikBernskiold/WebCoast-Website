@@ -927,6 +927,19 @@ ul {
     }
 
 /**
+ * App Callout
+ */
+.app-cta {
+  border-top: 1px solid $border-color;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+  .app-cta-image {
+    margin-bottom: -1.9rem;
+  }
+
+/**
  * Forms
  *
  * Styling for Gravity Forms
