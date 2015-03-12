@@ -14,6 +14,9 @@
 // Set the right content type
 header('Content-Type: application/json');
 
+// Set PHP timezone
+date_default_timezone_set('Europe/Stockholm');
+
 // Get the current program year to display
 $current_year = get_field( 'program_display_year', 'option' );
 
