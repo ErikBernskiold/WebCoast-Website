@@ -147,79 +147,67 @@
 
 
 			<?php if ( $display_year != 2013 ) : ?>
-			<div class="aterblick-program page-section light-gray-bg">
-				<div class="row">
-					<div class="small-24 columns">
+				<div class="aterblick-program page-section light-gray-bg">
+					<div class="row">
+						<div class="small-24 columns">
 
-						<h2><?php _e( 'The Program', 'webcoast' ); ?></h2>
-						<p class="intro"><?php _e('We are proud of the vast number of sessions held on numerous topics during WebCoast. This year, these are the sessions and activies that made up the program.', 'webcoast'); ?></p>
+							<h2><?php _e( 'The Program', 'webcoast' ); ?></h2>
+							<p class="intro"><?php _e('We are proud of the vast number of sessions held on numerous topics during WebCoast. This year, these are the sessions and activies that made up the program.', 'webcoast'); ?></p>
 
-						<div id="program-display">
-
-							<?php
-
-							// Get the conference days and loop through them,
-							// creating a query on the items that day.
-							$days = webcoast_get_transient_terms( 'webcoast_days', 'webcoast_day', array(
-								'hide_empty' => false,
-							), WEEK_IN_SECONDS * 4 );
-
-							foreach ( $days as $day ) : ?>
-
-								<h3 class="program-day-title"><?php echo $day->name; ?></h3>
+							<div id="program-display">
 
 								<?php
-									$program_query_args = array(
-										'post_type'      => 'program',
-										'posts_per_page' => -1,
-										'orderby'		  => 'meta_value',
-										'meta_key'		  => 'program_starttime',
-										'order'			  => 'ASC',
-										'tax_query'      => array(
-											array(
-												'taxonomy' => 'webcoast_day',
-												'field'    => 'id',
-												'terms'    => $day->term_id,
+
+								// Get the conference days and loop through them,
+								// creating a query on the items that day.
+								$days = webcoast_get_transient_terms( 'webcoast_days', 'webcoast_day', array(
+									'hide_empty' => false,
+								), WEEK_IN_SECONDS * 4 );
+
+								foreach ( $days as $day ) : ?>
+
+									<h3 class="program-day-title"><?php echo $day->name; ?></h3>
+
+									<?php
+										$program_query_args = array(
+											'post_type'      => 'program',
+											'posts_per_page' => -1,
+											'orderby'		  => 'meta_value',
+											'meta_key'		  => 'program_starttime',
+											'order'			  => 'ASC',
+											'tax_query'      => array(
+												array(
+													'taxonomy' => 'webcoast_day',
+													'field'    => 'id',
+													'terms'    => $day->term_id,
+												),
+												array(
+													'taxonomy' => 'year',
+													'field'    => 'slug',
+													'terms'    => $display_year,
+												),
 											),
-											array(
-												'taxonomy' => 'year',
-												'field'    => 'slug',
-												'terms'    => $display_year,
-											),
-										),
-									);
+										);
 
-									$program_query = new WP_Query( $program_query_args );
-								?>
+										$program_query = new WP_Query( $program_query_args );
+									?>
 
-								<?php if ( $program_query->have_posts() ) : ?>
-								<ul class="program-table">
+									<?php if ( $program_query->have_posts() ) : ?>
+									<ul class="program-table">
 
-									<?php while ( $program_query->have_posts() ) : $program_query->the_post(); ?>
-										<?php get_template_part( 'content', 'program-list' ); ?>
-									<?php endwhile; ?>
+										<?php while ( $program_query->have_posts() ) : $program_query->the_post(); ?>
+											<?php get_template_part( 'content', 'program-list' ); ?>
+										<?php endwhile; ?>
 
-								</ul>
-								<?php endif; wp_reset_postdata(); ?>
+									</ul>
+									<?php endif; wp_reset_postdata(); ?>
 
-							<?php endforeach; ?>
+								<?php endforeach; ?>
 
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		<?php endif; ?>
-
-			<?php if ( get_field( 'aterblick_workshops' ) ) : ?>
-			<div class="aterblick-workshops page-section">
-				<div class="row">
-					<div class="small-24 columns">
-						<h2><?php _e('Workshops', 'webcoast'); ?></h2>
-
-						<?php the_field('aterblick_workshops'); ?>
-					</div>
-				</div>
-			</div>
 			<?php endif; ?>
 
 			<div class="aterblick-lankarmm light-gray-bg page-section">
