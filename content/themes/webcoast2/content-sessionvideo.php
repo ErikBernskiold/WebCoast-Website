@@ -1,6 +1,16 @@
 <div id="video-<?php the_ID(); ?>" <?php post_class('video-item small-24 medium-12 large-8 columns'); ?>>
 
-	<?php $image = get_field('video_thumbnail'); ?>
+	<?php
+	$image = get_field('video_thumbnail');
+	$years = get_the_terms( get_the_ID(), 'year' );
+	$years_array = array();
+
+	foreach ( $years as $year ) {
+		$years_array[] = $year->name;
+	}
+
+	$year = join( $years_array, ', ' );
+	?>
 
 	<?php if( $image ) : ?>
 		<div class="video-thumbnail">
@@ -13,6 +23,8 @@
 	<?php if ( get_field( 'program_talare' ) ) : $speaker_counter = 1; ?>
 
 		<p class="video-speaker">
+
+			<span class="video-year"><?php echo $year; ?></span>
 
 			<?php while ( the_repeater_field( 'program_talare' ) ) : ?>
 

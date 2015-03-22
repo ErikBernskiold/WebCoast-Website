@@ -694,16 +694,24 @@ ul {
     word-break: break-word;
   }
 
-    @media all and (min-width: $large-screen) {
+    @media only screen and (min-width: 1024px) {
       .video-item:first-child,
       .video-item:nth-child(3n+1) {
-        clear: both;
+        clear: both !important;
       }
     }
 
     .video-thumbnail {
       overflow: hidden;
-      margin: 0;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .video-year {
+      text-transform: uppercase;
+      font-weight: bold;
+      background: #eee;
+      padding: 0.2rem 0.4rem;
+      margin-right: 0.3rem;
     }
 
     .video-title {
