@@ -210,7 +210,7 @@
 				</div>
 			<?php endif; ?>
 
-			<div class="aterblick-lankarmm light-gray-bg page-section">
+			<div class="aterblick-lankarmm page-section">
 				<div class="row">
 					<div class="small-24 columns">
 						<h2><?php _e('Links and more', 'webcoast'); ?></h2>
