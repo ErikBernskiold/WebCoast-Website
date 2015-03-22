@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: [
-					'assets/scss/*.scss',
+					'assets/sass/*.scss',
 				],
 				tasks: [ 'sass', 'autoprefixer' ],
 				options : {
