@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WebCoast Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-11 10:04+0100\n"
-"PO-Revision-Date: 2015-03-11 10:33+0100\n"
+"POT-Creation-Date: 2015-03-23 08:58+0100\n"
+"PO-Revision-Date: 2015-03-23 09:01+0100\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -530,7 +530,7 @@ msgstr ""
 "Upplev hur roligt det är på WebCoast genom dessa underbara bilder som "
 "deltagare tagit under åren."
 
-#: page-templates/template-program.php:23 single-aterblick.php:174
+#: page-templates/template-program.php:23 single-aterblick.php:227
 msgid "Program"
 msgstr "Program"
 
@@ -636,23 +636,33 @@ msgstr "Sponsorer och partners"
 msgid "Recorded Sessions"
 msgstr "Inspelade sessioner"
 
-#: single-aterblick.php:152
-msgid "Workshops"
-msgstr "Workshops"
+#: single-aterblick.php:154
+#, fuzzy
+msgid "The Program"
+msgstr "/program/"
 
-#: single-aterblick.php:163
+#: single-aterblick.php:155
+msgid ""
+"We are proud of the vast number of sessions held on numerous topics during "
+"WebCoast. This year, these are the sessions and activies that made up the "
+"program."
+msgstr ""
+"Vi är stolta över det stora antalet sessioner som hålls under WebCoast. "
+"Detta år var det följande sessioner som fanns att gå på."
+
+#: single-aterblick.php:216
 msgid "Links and more"
 msgstr "Länkar och annan information"
 
-#: single-aterblick.php:189
+#: single-aterblick.php:242
 msgid "15 mars, 2013"
 msgstr "15 mars, 2013"
 
-#: single-aterblick.php:193
+#: single-aterblick.php:246
 msgid "16 mars, 2013"
 msgstr "16 mars, 2013"
 
-#: single-aterblick.php:197
+#: single-aterblick.php:250
 msgid "17 mars, 2013"
 msgstr "17 mars, 2013"
 
@@ -718,9 +728,12 @@ msgstr "Från WebCoast:"
 msgid "&laquo; Back to the video archives"
 msgstr "&laquo; Tillbaka till videoarkivet"
 
-#: yarpp-template-videos.php:8
+#: yarpp-template-videos.php:9
 msgid "Other interesting sessions"
 msgstr "Andra sessioner som kan vara intressanta"
+
+#~ msgid "Workshops"
+#~ msgstr "Workshops"
 
 #~ msgid "Till videoarkivet &raquo;"
 #~ msgstr "Till videoarkivet &raquo;"

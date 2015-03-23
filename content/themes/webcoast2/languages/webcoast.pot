@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: webcoast-theme 1.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-11 10:04+0100\n"
+"POT-Creation-Date: 2015-03-23 08:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -500,7 +500,7 @@ msgid ""
 "attendees over the years."
 msgstr ""
 
-#: page-templates/template-program.php:23 single-aterblick.php:174
+#: page-templates/template-program.php:23 single-aterblick.php:227
 msgid "Program"
 msgstr ""
 
@@ -595,23 +595,30 @@ msgstr ""
 msgid "Recorded Sessions"
 msgstr ""
 
-#: single-aterblick.php:152
-msgid "Workshops"
+#: single-aterblick.php:154
+msgid "The Program"
 msgstr ""
 
-#: single-aterblick.php:163
+#: single-aterblick.php:155
+msgid ""
+"We are proud of the vast number of sessions held on numerous topics during "
+"WebCoast. This year, these are the sessions and activies that made up the "
+"program."
+msgstr ""
+
+#: single-aterblick.php:216
 msgid "Links and more"
 msgstr ""
 
-#: single-aterblick.php:189
+#: single-aterblick.php:242
 msgid "15 mars, 2013"
 msgstr ""
 
-#: single-aterblick.php:193
+#: single-aterblick.php:246
 msgid "16 mars, 2013"
 msgstr ""
 
-#: single-aterblick.php:197
+#: single-aterblick.php:250
 msgid "17 mars, 2013"
 msgstr ""
 
@@ -677,6 +684,6 @@ msgstr ""
 msgid "&laquo; Back to the video archives"
 msgstr ""
 
-#: yarpp-template-videos.php:8
+#: yarpp-template-videos.php:9
 msgid "Other interesting sessions"
 msgstr ""
