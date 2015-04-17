@@ -180,8 +180,8 @@ foreach ( $days as $day ) :
 				'title'           => get_the_title(),
 				'date'            => $program_date_object->format( 'Y-m-d' ),
 				'summary'         => $summary,
-				'start_time'      => $start_time_object->format( 'Y-m-d H:i:s O' ),
-				'end_time'        => $end_time_object->format( 'Y-m-d H:i:s O' ),
+				'start_time'      => $start_time_object->format( 'Y-m-d H:i:s' ),
+				'end_time'        => $end_time_object->format( 'Y-m-d H:i:s' ),
 				'video_embed'     => $video_embed,
 				'video_thumbnail' => $video_thumbnail,
 				'content'         => get_the_content(),
@@ -199,6 +199,7 @@ foreach ( $days as $day ) :
 endforeach;
 
 // Encode JSON
+header('Content-Type: application/json');
 $output = json_encode( $program_array );
 
 // If we have dev mode set in the URL,
